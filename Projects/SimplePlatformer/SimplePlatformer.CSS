@@ -1,0 +1,246 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat';
+}
+
+.navbar {
+    margin: 0;
+    padding-top: 15px;
+    border-radius: 0;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    font-size: 1.3em;
+    z-index: 10;
+    position: fixed;
+    left: 0%;
+    top: 0px;
+    width: 100%;
+    display: inline-flex;
+    border: none;
+    height: 10%;
+}
+
+.navbar-inverse .navbar-nav li a {
+    color: rgb(0, 0, 0, .38);
+}
+
+.active,
+.navbar-inverse .navbar-nav li a:hover {
+    color: #111111;
+}
+
+.navbar-inverse .navbar-nav .active a,
+.navbar-inverse .navbar-nav .active a:focus,
+.navbar-inverse .navbar-nav .active a:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgb(61, 61, 61);
+}
+
+.membershipBtn {
+    background-color: rgb(112, 161, 161);
+}
+
+
+/*
+Propertise for the screen
+*/
+
+.firstScreen {
+    position: relative;
+    height: 100vh;
+    min-height: 500px;
+    max-height: 1080px;
+    background-size: cover;
+    overflow: hidden;
+    width: 100%;
+    background-color: #121212;
+    display: flex;
+}
+
+.infoScreen {
+    width: 50%;
+    height: 100%;
+}
+
+.divider {
+    width: 70%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: #3B98E3;
+    border: none;
+    height: 2px;
+}
+
+.infoScreen h1 {
+    margin-top: 200px;
+    color: #FFFFFF;
+    width: 90%;
+    text-align: left;
+    margin-left: 100px;
+    letter-spacing: 15px;
+}
+
+.infoScreen a {
+    color: #3B98E3;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.infoScreen a:hover {
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.specificText {
+    width: 75%;
+    margin-left: 100px;
+    height: 100%;
+}
+
+.infoScreen p {
+    color: #808080;
+    font-size: 1.2rem;
+}
+
+.picScreen {
+    width: 50%;
+    height: 100%;
+}
+
+.picScreen img {
+    height: 100%;
+    width: 100%;
+}
+
+.firstPic {
+    margin-top: 55px;
+}
+
+.secondScreen {
+    position: relative;
+    height: 100vh;
+    min-height: 500px;
+    max-height: 1080px;
+    background-size: cover;
+    overflow: hidden;
+    width: 100%;
+    background-color: #121212;
+    display: flex;
+}
+
+.thirdScreen {
+    position: relative;
+    height: 100vh;
+    min-height: 500px;
+    max-height: 1080px;
+    background-size: cover;
+    overflow: hidden;
+    width: 100%;
+    background-color: #121212;
+    display: flex;
+}
+
+.feedbackForm {
+    margin-top: 50px;
+}
+
+@media only screen and (max-device-width: 480px) {
+    .isocLogo {
+        width: 100px;
+        padding-left: 0px;
+    }
+    li a {
+        font-size: 35px;
+    }
+    .membershipBtn {
+        display: none;
+    }
+    .firstScreen,
+    .thirdScreen {
+        height: auto;
+        max-height: 4000px;
+        display: block;
+    }
+    .secondScreen {
+        height: auto;
+        max-height: 4000px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .infoScreen {
+        width: 100%;
+        height: auto;
+    }
+    .infoScreen h1 {
+        font-size: 50px;
+        text-align: center;
+        margin-left: 0;
+    }
+    .specificText {
+        text-align: center;
+    }
+    .specificText p {
+        font-size: 40px;
+        color: #adadad;
+    }
+    .specificText a {
+        font-size: 30px;
+    }
+    .picScreen {
+        width: 100%;
+        height: 50%;
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 4%;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+    width: 70px;
+}
+
+.fa:hover {
+    opacity: 0.8;
+    color: #FFF;
+}
+
+.fa {
+    text-decoration: none;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+@media (max-width: 767px) {
+    .navbar-inverse .navbar-collapse,
+    .navbar-inverse .navbar-form {
+        background-color: rgb(206, 206, 206);
+        border-color: #101010;
+        margin-left: -150%;
+        margin-right: 0%;
+    }
+    .navbar-toggle {
+        background-color: rgb(94, 94, 94);
+    }
+    .navbar {
+        left: 81%;
+        border-radius: 0;
+        background-color: rgba(255, 255, 255, 0);
+        border-style: none;
+    }
+}

@@ -332,31 +332,76 @@ p {
     display: block;
     margin: 0 auto;
     padding: 0;
-    max-width: 800px;
+    max-width: 80%;
     text-align: center;
 }
 
 .sixthScreen li {
     display: inline-block;
     margin: 7px;
-    padding: 5px 10px;
+    padding: 10px 20px;
     color: #374054;
     background: #e4e4ea;
     list-style: none;
     cursor: default;
     font-size: 1.2em;
-    width: 100px;
     text-align: center;
-    border-radius: 30px;
+    width: 80%;
+    max-width: 100%;
+    border-radius: 0px;
+}
+
+.seventhScreen {
+    position: relative;
+    height: 100%;
+    min-height: 200px;
+    max-height: 1080px;
+    background-color: #161616;
+    background-size: cover;
+    overflow: hidden;
+    width: 100%;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 4%;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+    width: 70px;
+}
+
+.fa:hover {
+    opacity: 0.8;
+    color: #FFF;
+}
+
+.fa {
+    text-decoration: none;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
 }
 
 @media (max-width: 1000px) {
     .navbar {
-        right: 0%;
         left: 0%;
+        right: 0%;
     }
-    #mNavBar {
-        text-align: center;
+    .carousel-inner,
+    .item,
+    .item img {
+        height: 50vh;
     }
     .aboutMePara {
         font-size: 14px;
@@ -367,6 +412,7 @@ p {
     }
     .experience-content {
         margin-left: 150px;
+        width: 80%;
     }
     .dot {
         display: none;
