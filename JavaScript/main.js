@@ -5,7 +5,7 @@ $(document).ready(function() {
 });
 
 jQuery(function($) {
-    var roles = ['Computer Science', 'Android Developer', 'Game Developer', 'Web Developer', 'Event Manager'];
+    var roles = ['Computer Science', 'Android Developer', 'Game Developer', 'Web Developer'];
     //used to determine which is the next roles to be displayed
     var counter = 0;
     var $role = $('#jobs')
