@@ -335,22 +335,6 @@ p {
     text-align: center;
 }
 
-.project-button{
-    border-radius: 5px;
-    background-color: #000000;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    text-decoration: none;
-    color: #fff;
-}
-
-.project-button:hover{
-    text-decoration: none;
-    color: #00ff9d;
-}
-
 .sixthScreen {
     position: relative;
     height: 100%;

@@ -1,9 +1,3 @@
-$(document).ready(function() {
-    $(".navbar-nav li a").click(function(event) {
-        $(".navbar-collapse").collapse('hide');
-    });
-});
-
 jQuery(function($) {
     var roles = ['Computer Science', 'Android Developer', 'Game Developer', 'Web Developer'];
     //used to determine which is the next roles to be displayed
@@ -19,8 +13,3 @@ jQuery(function($) {
         }
     }, 2000)
 })
-
-$('li > a').click(function() {
-    $('li').removeClass();
-    $(this).parent().addClass('active');
-});
