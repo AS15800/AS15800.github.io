@@ -5,43 +5,106 @@
     <title>Adesh's Personal website</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--Bootstrap-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/Projects/NavBar.css">
 
-    <!--Fonts-->
-    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-
-    <!--Ading CSS to HTML-->
-    <link rel="stylesheet" href="/Projects/SimplePlatformer/SimplePlatformer.CSS">
+    <style>
+        /*
+        Body protertise
+        */
+        
+        .firstScreen {
+            min-height: 100vh;
+            display: flex;
+            padding: 16px;
+            background-color: rgb(77, 77, 77);
+        }
+        
+        .infoScreen {
+            width: 50%;
+            height: 100%;
+        }
+        
+        .divider {
+            width: 70%;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            background-color: #3B98E3;
+            border: none;
+            height: 2px;
+        }
+        
+        .infoScreen h1 {
+            margin-top: 200px;
+            color: #FFFFFF;
+            width: 90%;
+            text-align: left;
+            margin-left: 100px;
+            letter-spacing: 15px;
+        }
+        
+        .infoScreen a {
+            color: #3B98E3;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        
+        .infoScreen a:hover {
+            color: #FFFFFF;
+            cursor: pointer;
+        }
+        
+        .specificText {
+            width: 75%;
+            margin-left: 100px;
+            height: 100%;
+        }
+        
+        .infoScreen p {
+            color: #808080;
+            font-size: 1.2rem;
+        }
+        
+        .picScreen {
+            width: 50%;
+            height: 100%;
+        }
+        
+        .picScreen img {
+            height: 100%;
+            width: 100%;
+        }
+        
+        .firstPic {
+            margin-top: 55px;
+        }
+    </style>
 
 </head>
 
 <body>
-    <!--Adding JavaScript to HTML-->
-    <script src="/JavaScript/main.js"></script>
 
-    <nav class="navbar navbar-inverse">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav navbar-center">
-                    <li class="List"><a href="#myCarousel">PC/Console Games</a></li>
-                    <li class="List"><a href="#About">Mobile Games</a></li>
-                    <li class="List"><a href="#Experience">Mobile App</a></li>
-                    <li class="List"><a href="#Education">Web developement</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <div class="topnav" id="myTopnav">
+        <a href="#home">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
     <!-- End of Navigation -->
 
     <div class="firstScreen" id="FreshersWeek">
@@ -60,15 +123,15 @@
         </div>
 
         <div class="picScreen">
-            <img class="firstPic" src="../images/FresherWeek.jpg">
+            <img class="firstPic" src="/img/img1.png">
         </div>
     </div>
 
-    
+
 
     <div class="seventhScreen" id="Footer">
         <footer>
-            <a href="https://www.linkedin.com/in/adeshsing-sookdewo/" target="_blank" class="fa fa-linkedin"></a>
+            <a href="https://www.linkedin.com/in/adeshsing-sookdewo/" target="_blank" class=" fa fa-linkedin"></a>
             <p>Author: Adesh Sookdewo<br>
                 <a href="mailto:adesh5800@hotmail.co.uk">adesh5800@hotmail.co.uk</a></p>
         </footer>

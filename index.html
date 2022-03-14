@@ -16,37 +16,49 @@
 
     <!--Ading CSS to HTML-->
     <link rel="stylesheet" href="/CSS/main.css">
+    <link rel="stylesheet" href="/Projects/NavBar.css">
 
 </head>
 
 <body>
-    <!--Adding JavaScript to HTML-->
-    <script src="/JavaScript/main.js"></script>
-
-    <div class="navContainer">
-        <nav class="navbar navbar-inverse">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                </div>
-                <div class="collapse navbar-collapse" id="myNavbar">
-                    <ul class="nav navbar-nav navbar-center">
-                        <li class="List"><a href="#myCarousel">Home</a></li>
-                        <li class="List"><a href="#About">About</a></li>
-                        <li class="List"><a href="#Experience">Experience</a></li>
-                        <li class="List"><a href="#Education">Education</a></li>
-                        <li class="List"><a href="#Projects">Projects</a></li>
-                        <li class="List"><a href="#Skills">Skills</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+    <div class="topnav" id="myTopnav">
+        <a href="#myCarousel">Home</a>
+        <a href="#About">About</a>
+        <a href="#Experience">Experience</a>
+        <a href="#Education">Education</a>
+        <a href="#Projects">Projects</a>
+        <a href="#Skills">Skills</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
     </div>
-    
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+
+        jQuery(function($) {
+            var roles = ['Computer Science', 'Android Developer', 'Game Developer', 'Web Developer'];
+            //used to determine which is the next roles to be displayed
+            var counter = 0;
+            var $role = $('#jobs')
+                //repeat the passed function at the specified interval - it is in milliseconds
+            setInterval(function() {
+                //display the role and increment the counter to point to next role
+                $role.text(roles[counter++]);
+                //if it is the last role in the array point back to the first item
+                if (counter >= roles.length) {
+                    counter = 0;
+                }
+            }, 2000)
+        })
+    </script>
     <!-- End of Navigation -->
 
     <div id="myCarousel" class="carousel slide firstScreen" data-ride="carousel">
@@ -209,7 +221,7 @@
         </div>
 
         <div class="viewMoreBtn">
-            <a type="button" class="btnLearn" href ="/Projects/AllQualifications.html" target="_blank">View Qualifications</a>
+            <a type="button" class="btnLearn" href="/Projects/AllQualifications.html" target="_blank">View Qualifications</a>
         </div>
     </div>
 
@@ -228,7 +240,7 @@
             </div>
 
             <div class="image-content">
-                <img src="/img/img1.png">
+                <img src="/img/img1.png" loading="lazy">
             </div>
         </div>
 
@@ -244,7 +256,7 @@
             </div>
 
             <div class="image-content">
-                <img src="/img/img1.png">
+                <img src="/img/img1.png" loading="lazy">
             </div>
         </div>
 
@@ -260,12 +272,12 @@
             </div>
 
             <div class="image-content">
-                <img src="/img/img1.png">
+                <img src="/img/img1.png" loading="lazy">
             </div>
         </div>
 
         <div class="viewMoreBtn">
-            <a type="button" class="btnLearn" href ="/Projects/AllProject.html" target="_blank">View more Projects</a>
+            <a type="button" class="btnLearn" href="/Projects/AllProject.html" target="_blank">View more Projects</a>
         </div>
 
     </div>

@@ -6,7 +6,7 @@ body {
     font-family: 'Montserrat';
 }
 
-.navContainer{
+.navContainer {
     width: 100%;
     background-color: #000000;
 }
@@ -328,7 +328,7 @@ p {
     text-align: left;
 }
 
-.viewMoreBtn{
+.viewMoreBtn {
     margin-top: 20px;
     margin-bottom: 20px;
     width: 100%;
@@ -378,37 +378,6 @@ p {
     background-size: cover;
     overflow: hidden;
     width: 100%;
-}
-
-footer {
-    text-align: center;
-    padding: 10px;
-    color: white;
-}
-
-.fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 4%;
-    text-align: center;
-    text-decoration: none;
-    margin: 5px 2px;
-    border-radius: 50%;
-    width: 70px;
-}
-
-.fa:hover {
-    opacity: 0.8;
-    color: #FFF;
-}
-
-.fa {
-    text-decoration: none;
-}
-
-.fa-linkedin {
-    background: #007bb5;
-    color: white;
 }
 
 @media (max-width: 1300px) {
@@ -486,7 +455,8 @@ footer {
         transform: translateY(0%);
         text-transform: uppercase;
     }
-    .carousel-caption h1, h2 {
+    .carousel-caption h1,
+    h2 {
         font-size: x-large;
     }
     .firstScreen {
