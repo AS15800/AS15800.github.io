@@ -1,13 +1,86 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <title>Adesh's Personal website</title>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/Projects/NavBar.css">
-    <style>
 
+    <style>
+        /*
+        Body protertise
+        */
+        
+        .firstScreen {
+            min-height: 100vh;
+            display: flex;
+            padding: 16px;
+            background-color: rgb(77, 77, 77);
+        }
+        
+        .infoScreen {
+            width: 50%;
+            height: 100%;
+        }
+        
+        .divider {
+            width: 70%;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            background-color: #3B98E3;
+            border: none;
+            height: 2px;
+        }
+        
+        .infoScreen h1 {
+            margin-top: 200px;
+            color: #FFFFFF;
+            width: 90%;
+            text-align: left;
+            margin-left: 100px;
+            letter-spacing: 15px;
+        }
+        
+        .infoScreen a {
+            color: #3B98E3;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        
+        .infoScreen a:hover {
+            color: #FFFFFF;
+            cursor: pointer;
+        }
+        
+        .specificText {
+            width: 75%;
+            margin-left: 100px;
+            height: 100%;
+        }
+        
+        .infoScreen p {
+            color: #808080;
+            font-size: 1.2rem;
+        }
+        
+        .picScreen {
+            width: 50%;
+            height: 100%;
+        }
+        
+        .picScreen img {
+            height: 100%;
+            width: 100%;
+        }
+        
+        .firstPic {
+            margin-top: 55px;
+        }
     </style>
+
 </head>
 
 <body>
@@ -32,6 +105,33 @@
             }
         }
     </script>
+    <!-- End of Navigation -->
+
+    <div class="firstScreen" id="FreshersWeek">
+        <div class="infoScreen">
+            <h1>All Qualifications</h1>
+            <hr class="divider">
+            <div class="specificText">
+                <p>These are all my qualifications
+                </p>
+            </div>
+        </div>
+
+        <div class="picScreen">
+            <img class="firstPic" src="/img/img1.png">
+        </div>
+    </div>
+
+
+
+    <div class="seventhScreen" id="Footer">
+        <footer>
+            <a href="https://www.linkedin.com/in/adeshsing-sookdewo/" target="_blank" class=" fa fa-linkedin"></a>
+            <p>Author: Adesh Sookdewo<br>
+                <a href="mailto:adesh5800@hotmail.co.uk">adesh5800@hotmail.co.uk</a></p>
+        </footer>
+
+    </div>
 
 </body>
 
