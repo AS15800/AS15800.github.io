@@ -1,0 +1,72 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat';
+}
+
+.firstScreen {
+    position: relative;
+    height: 25vh;
+    background-size: cover;
+    overflow: hidden;
+    width: 100%;
+    background-color: #121212;
+    display: flex;
+}
+
+.infoScreen {
+    width: 50%;
+    height: 100%;
+}
+
+.divider {
+    width: 70%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: #3B98E3;
+    border: none;
+    height: 2px;
+}
+
+.infoScreen h1 {
+    margin-top: 10px;
+    color: #FFFFFF;
+    width: 90%;
+    text-align: left;
+    margin-left: 100px;
+    letter-spacing: 15px;
+}
+
+.infoScreen a {
+    color: #3B98E3;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.infoScreen a:hover {
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.specificText {
+    width: 75%;
+    margin-left: 100px;
+    height: 100%;
+}
+
+.infoScreen p {
+    color: #808080;
+    font-size: 1.2rem;
+}
+
+.picScreen {
+    width: 50%;
+    height: 100%;
+}
+
+.picScreen img {
+    height: 100%;
+    width: 100%;
+}

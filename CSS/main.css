@@ -451,13 +451,13 @@ p {
         border-style: none;
     }
     .carousel-caption {
-        top: 0%;
+        top: 15%;
         transform: translateY(0%);
         text-transform: uppercase;
     }
     .carousel-caption h1,
     h2 {
-        font-size: x-large;
+        font-size: large;
     }
     .firstScreen {
         height: 50vh;
