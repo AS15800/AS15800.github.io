@@ -114,15 +114,12 @@ p {
 
 .aboutMePara {
     color: #FFF;
-    margin-top: 10%;
     font-size: 18px;
 }
 
 .aboutMeTitle {
     color: #FFF;
-    margin-top: 30%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+    margin-top: 10vh;
 }
 
 .thirdScreen {

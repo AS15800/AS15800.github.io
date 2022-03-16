@@ -16,6 +16,20 @@ body {
     display: flex;
 }
 
+.topScreen {
+    position: relative;
+    height: 30vh;
+    background-size: cover;
+    overflow: hidden;
+    width: 100%;
+    background-color: #121212;
+    display: flex;
+}
+
+.firstQual {
+    margin-top: 5vh;
+}
+
 .infoScreen {
     width: 50%;
     height: 100%;
