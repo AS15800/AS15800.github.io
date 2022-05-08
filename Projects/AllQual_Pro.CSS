@@ -3,7 +3,25 @@ html {
 }
 
 body {
+    margin: 0;
     font-family: 'Montserrat';
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: rgb(0, 0, 0, 0.8);
+    position: fixed;
+    z-index: 100;
+    width: 100vw;
+}
+
+.topnav h3 {
+    float: center;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
 }
 
 .firstScreen {
@@ -50,7 +68,8 @@ body {
     width: 90%;
     text-align: left;
     margin-left: 100px;
-    letter-spacing: 15px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
 }
 
 .infoScreen a {
