@@ -15,14 +15,6 @@ body {
     width: 100vw;
 }
 
-.topnav h3 {
-    float: center;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    text-decoration: none;
-}
-
 .firstScreen {
     position: relative;
     min-height: 25vh;
