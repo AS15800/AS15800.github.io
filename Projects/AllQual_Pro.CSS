@@ -27,7 +27,7 @@ body {
 
 .topScreen {
     position: relative;
-    min-height: 30vh;
+    min-height: 20vh;
     background-size: cover;
     overflow: hidden;
     width: 100%;
@@ -82,7 +82,7 @@ body {
 }
 
 .infoScreen p {
-    color: #808080;
+    color: #dddddd;
     font-size: 1.2rem;
 }
 
