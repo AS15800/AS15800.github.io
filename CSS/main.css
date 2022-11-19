@@ -281,6 +281,8 @@ p {
     font-weight: 500;
     text-align: center;
     margin-top: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
     color: #cacaca;
 }
 
@@ -315,11 +317,10 @@ p {
 }
 
 .image-content img {
-    width: 100%;
+    width: auto;
     height: 40vh;
     top: 0;
-    margin: 0;
-    text-align: center;
+    margin-left: 25%;
     opacity: 1;
 }
 

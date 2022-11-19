@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta property="og:title" content="Islamic Society Greenwich" />
+	<meta property="og:description" content="The official website for the Islam Society at University of Greenwich">
+	<meta property="og:url" content="http://isocgreenwich.ga/" />
+	<meta charset="UTF-8">
+	<meta name="description" content="The official website for the Islam Society at University of Greenwich">
+	<meta name="keywords" content="HTML, CSS, JavaScript, Islam, Isoc, Greenwich">
+    <meta name="author" content="Islamic Society Greenwich, Ibrahim Sookdewo">
+    
+    
+    <title>Islamic Society - Greenwich</title>
+    <link rel="icon" type="image/png" href="../../img/isoc_logo.jpeg" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+
+    <link rel="stylesheet" href="Main/CSS/main.css">
+    <link rel="stylesheet" href="Main/CSS/slideshow.css">
+    <link rel="stylesheet" href="Main/CSS/gallery.css">
+    <link rel="stylesheet" href="Main/CSS/contactForm.css">
+    <link rel="stylesheet" href="Main/CSS/footer.css">
+
+    <script src="Main/JavaScript/slide_timer.js"></script>
+    <script src="Main/JavaScript/prayerTime.js"></script>
+
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+<body>
+
+    <div class="menu" id="topNav">
+        <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#Event">Events</a></li>
+            <li><a href="#About">About Isoc</a></li>
+            <li><a href="#Prayer">Prayer</a></li>
+            <li><a href="#Gallery">Gallery</a></li>
+            <li><a href="#Contact">Contact us</a></li>
+            <li><a target="_blank" href="https://www.justgiving.com/fundraising/isocs4yemen">Donation</a></li>
+            <li><a target="_blank" href="https://www.greenwichsu.co.uk/societies/islamic">Join the Isoc</a></li>
+            <!-- <li><a target="_blank" href="../../Learn/HTML/home.html">Learn</a></li> -->
+        </ul>
+    </div>
+
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="#Home" onclick="closeNav()">Home</a>
+            <a href="#Event" onclick="closeNav()">Events</a>
+            <a href="#About" onclick="closeNav()">About Isoc</a>
+            <a href="#Prayer" onclick="closeNav()">Prayer</a>
+            <a href="#Gallery" onclick="closeNav()">Gallery</a>
+            <a href="#Contact" onclick="closeNav()">Contact us</a>
+            <a target="_blank" href="https://www.justgiving.com/fundraising/isocs4yemen">Donation</a>
+            <a target="_blank" href="https://www.greenwichsu.co.uk/societies/islamic">Join the Isoc</a>
+        </div>
+    </div>
+    <span id="navMenu" class="spanNav" onclick="openNav()">&#9776;</span>
+
+    <div class="firstScreen" id="Home">
+
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 4</div>
+                <img class="slideshowPics" src="Main/images/img1.jpg">
+                <div class="text">Bake Sale</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 4</div>
+                <img class="slideshowPics" src="Main/images/img2.jpg">
+                <div class="text">Marriage Workshop</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 4</div>
+                <img class="slideshowPics" src="Main/images/img3.jpg">
+                <div class="text">Charity Week Stall</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 4</div>
+                <img class="slideshowPics" src="Main/images/img4.jpg">
+                <div class="text">Grill A Muslim</div>
+            </div>
+
+        </div>
+
+        <div class="dots" style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+        <div class="Intro">
+            <img class="isocLogo" src="img/isoc_logo.jpeg">
+            <h1>Islamic Society</h1>
+            <h2 class="uni">Univeristy Of Greenwich</h2>
+            <!--
+            <a target="_blank" href="NextYearShura/Voting/html/voting.html" class="learnBtn">Isoc committee 2021/2022 nomination</a>
+            -->
+
+            <div class="eventTimer" id="event_timerId">
+                <div class="countdownInfo">
+                    <h3>Countdown to Ramadan 2023</h3>
+                    <div class="countdown">
+                        <div class="countdownSpecific">
+                            <h1 id="days"></h1>
+                            <h4>Days</h4>
+                        </div>
+
+                        <div class="countdownSpecific">
+                            <h1 id="hours"></h1>
+                            <h4>hours</h4>
+                        </div>
+
+                        <div class="countdownSpecific">
+                            <h1 id="minutes"></h1>
+                            <h4>minutes</h4>
+                        </div>
+
+                        <div class="countdownSpecific">
+                            <h1 id="seconds"></h1>
+                            <h4>seconds</h4>
+                        </div>
+                    </div>
+                </div>
+                <!--
+                <a target="_blank" href="https://www.greenwichsu.co.uk/welcome/event/6776/" class="bookBtn">Book your ticket now</a>
+                -->
+
+            </div>
+        </div>
+    </div>
+
+    <div class="secondScreen" id="Event">
+        <div class="pageTitle">
+            <h1 class="title1">Upcoming events</h1>
+        </div>
+
+        <div class="events">
+            <div class="eventList">
+                <a target="_blank" href="https://muslimhands.org.uk/ramadan/what-is-ramadan">
+                <div class="card">
+                    <div class="speaker_img event_date oneWeek">
+                        <h1>23</h1>
+                        <h2>MARCH</h2>
+                    </div>
+                    <img class="speaker_img" src="img/isoc_logo.jpeg" alt="Speaker1">
+                    <div class="speaker_info">
+                        <h4>Ramadan 2023</h4>
+                        <p>This is the expected start of Ramanda 2023</p>
+                    </div>
+                </div>
+                </a>
+
+                <a target="_blank" href="https://www.muslimaid.org/media-centre/blog/what-is-eid-ul-adha/">
+                    <div class="card">
+                        <div class="speaker_img event_date moreWeek">
+                            <h1>21</h1>
+                            <h2>APRIL</h2>
+                        </div>
+                        <img class="speaker_img" src="img/isoc_logo.jpeg" alt="Speaker1">
+                        <div class="speaker_info">
+                            <h4>Eid</h4>
+                            <p>This is the expected start date of Eid 2023</p>
+                        </div>
+                    </div>
+                </a>
+
+                <!--
+                <a target="_blank" href="../Content/Welcome_pack_FAC57_.pdf">
+                    <div class="card">
+                        <div class="speaker_img event_date moreWeek">
+                            <h1>02</h1>
+                            <h2>OCT</h2>
+                        </div>
+                        <img class="speaker_img" src="../../img/isoc_logo.jpeg" alt="Speaker1">
+                        <div class="speaker_info">
+                            <h4>Prayer Workshop</h4>
+                            <p>Hello World</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a target="_blank" href="../Content/Welcome_pack_FAC57_.pdf">
+                    <div class="card">
+                        <div class="speaker_img event_date moreWeek">
+                            <h1>19</h1>
+                            <h2>OCT</h2>
+                        </div>
+                        <img class="speaker_img" src="../../img/isoc_logo.jpeg" alt="Speaker1">
+                        <div class="speaker_info">
+                            <h4>Charity Week</h4>
+                            <p>Hello World</p>
+                        </div>
+                    </div>
+                </a>
+                -->
+            </div>
+        </div>
+
+        <div class="otherEvents">
+            <!-- <a href="#" class="otherEventBtn">Event Calendar</a> -->
+            <a href="/Projects/Isoc Greenwich/NextYearShura/Voting/html/voting.html" target="_blank" class="otherEventBtn">Freshers Fair</a>
+            <!-- <a href="#" class="otherEventBtn">Charity Week</a>
+            <a href="#" class="otherEventBtn">Discover Islam Week</a>
+            <a href="#" class="otherEventBtn">Promote your Event</a> -->
+        </div>
+
+    </div>
+
+    <div class="thirdScreen" id="About">
+        <div class="pageTitle">
+            <h1 class="title1">About us</h1>
+        </div>
+
+        <div class="content">
+            <div class="infoScreen">
+                <hr class="divider">
+                <div class="aboutIsocInfo">
+                    <p>
+                        The Islamic Society Greenwich is committed to provide everyone with engaging and relevant
+                        activities.
+                        <br> The Isoc welcomes all students and members of the university, Muslims, people of different
+                        faith
+                        and no faith alike, aiming to understand Islam and live by it's teachings and principles.
+                        <br>
+                        <br> We believe that working for Islam is not only about campaigning for Muslim rights, but also
+                        about
+                        the rights of others, about uniting with others for the common good.
+                    </p>
+                </div>
+                <hr class="divider">
+            </div>
+
+            <div class="picScreen">
+                <iframe class="introVideo" src="" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="fouthScreen" id="Prayer">
+        <div class="pageTitle">
+            <h1 class="title1">Prayer</h1>
+        </div>
+
+        <div class="prayerTime">
+            <div class="time">
+                <h2 id="fajrTime">00:00</h2>
+                <h4>Fajr</h4>
+            </div>
+
+            <div class="time">
+                <h2 id="sunriseTime">00:00</h2>
+                <h4>Sunrise</h4>
+            </div>
+
+            <div class="time">
+                <h2 id="dhuhrTime">00:00</h2>
+                <h4>Dhuhr</h4>
+            </div>
+
+            <div class="time">
+                <h2 id="asrTime">00:00</h2>
+                <h4>Asr</h4>
+            </div>
+
+            <div class="time">
+                <h2 id="maghribTime">00:00</h2>
+                <h4>Maghrib</h4>
+            </div>
+
+            <div class="time">
+                <h2 id="ishaTime">00:00</h2>
+                <h4>Isha</h4>
+            </div>
+        </div>
+
+        <div class="prayerTimeInfo">
+            <h1 id="currentTime">CT</h1>
+            <h2 id="currentDate">CD</h2>
+        </div>
+
+        <div class="allPrayerInfo">
+            <!--
+            <div class="prayerRoom">
+    
+                <iframe class="prayerRoomVideo" src="https://www.youtube-nocookie.com/embed/1dn60yPZG3A" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            -->
+
+            <div class="prayerInfo">
+                <h2>Prayer room: Dreadnought 018</h2>
+                <hr class="divider">
+                <h2>Jumu'ah</h2>
+                <h4>Jumu'ah place<br>Brothers: Dreadnought 015<br>Sisters: Dreadnought 018</h4>
+                <h4>Jumu'ah time: 13:00 (1PM)</h4>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="fifthScreen" id="Gallery">
+        <div class="pageTitle">
+            <h1 class="title1">Gallery</h1>
+        </div>
+
+        <!-- The four columns -->
+        <div class="row">
+            <div class="column">
+                <img src="Main/images/img1.jpg" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <img src="Main/images/img2.jpg" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <img src="Main/images/img3.jpg" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <img src="Main/images/img4.jpg" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <img src="Main/images/img5.jpg" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <img src="Main/images/img6.jpg" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <img src="Main/images/img7.jpg" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <img src="Main/images/img8.jpg" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <img src="Main/images/img9.jpg" onclick="myFunction(this);">
+            </div>
+        </div>
+
+        <div class="container">
+            <img class="expandedImg" id="expandedImg">
+        </div>
+
+    </div>
+
+    <div class="sixthScreen" id="Contact">
+        <div class="pageTitle">
+            <h1 class="title1">Contact Us</h1>
+        </div>
+
+        <div class="contact_facebook">
+
+            <div class="contact">
+                <h2 class="getInTouchText">Get in touch</h2>
+                <p>Greenwich Students' Union<br>
+                    Dreadnought building<br>
+                    Greenwich<br>
+                    London<br>
+                    SE10 9LS<br><br></p>
+                <div class="contactForm">
+                    <p class="">
+                        Email:
+                        <a href="mailto:isocgreenwich@gmail.com">isocgreenwich@gmail.com</a>
+                    </p>
+                </div>
+            </div>
+
+            <iframe class="facebookLive"
+                src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fisocgreenwich%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId=483236532469526"
+                width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                allowTransparency="true" allow="encrypted-media"></iframe>
+        </div>
+
+        <div class="otherContactButton">
+            <a target="_blank" href="https://www.greenwichsu.co.uk/societies/islamic" class="otherContactBtn">Join the
+                Isoc</a>
+            <!-- <a href="#" class="otherContactBtn">Become a volunteer</a>
+            <a href="#" class="otherContactBtn">Event request</a> -->
+        </div>
+
+        <!-- Begin Mailchimp Signup Form -->
+
+        </style>
+        <div id="mc_embed_signup">
+            <form
+                action="https://wordpress.us7.list-manage.com/subscribe/post?u=f44fbd0ae1051ec1845ab1537&amp;id=7b4aead88a"
+                method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+                target="_blank" novalidate>
+                <div id="mc_embed_signup_scroll">
+                    <label class="subsText" for="mce-EMAIL">Subscribe to the Isoc's mailing list</label>
+                    <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Email address"
+                        required>
+                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
+                            name="b_f44fbd0ae1051ec1845ab1537_7b4aead88a" tabindex="-1" value=""></div>
+                    <div class="clear"><input type="submit" value="Subscribe" name="subscribe"
+                            id="mc-embedded-subscribe" class="Subsbutton"></div>
+                </div>
+            </form>
+        </div>
+
+        <!--End mc_embed_signup-->
+
+    </div>
+
+    <div class="footer">
+
+        <div class="socialMedia">
+            <a href="https://www.facebook.com/isocgreenwich/" target="_blank"><img class="socialBtn"
+                    src="img/SocialMediaIcons/facebook.png"></a>
+            <a href="https://www.instagram.com/isocgreenwich/" target="_blank"><img class="socialBtn"
+                    src="img/SocialMediaIcons/instagram.png"></a>
+            <a href="https://twitter.com/isocgreenwich" target="_blank"><img class="socialBtn"
+                    src="img/SocialMediaIcons/twitter.png"></a>
+            <a href="https://www.youtube.com/user/ISocGreenwich" target="_blank"><img class="socialBtn"
+                    src="img/SocialMediaIcons/youtube.png"></a>
+            <a href="#"><img class="socialBtn" src="img/isoc_logo.jpeg"></a>
+        </div>
+
+        <div class="footerBtn">
+            <!-- <a class="FBtn" href="faq.html">Frequently Asked Questions</a> -->
+            <!-- <a class="FBtn" href="#">Terms</a>
+            <a class="FBtn" href="#">Privacy</a> -->
+        </div>
+
+        <div class="footerButtons">
+            <h3>USEFULL LINKS</h3>
+            <div class="footerBtn">
+                <a class="FBtn UL" href="#Prayer">Prayer room</a>
+                <!-- <a class="FBtn" href="#">Jumu'ah</a> -->
+                <a class="FBtn UL" href="Sub/FreshersWeek/html/freshersMain.html" target="_blank">Freshers
+                    Week</a>
+                <!-- <a class="FBtn" href="#">Charity Week</a>
+                <a class="FBtn" href="#">Discover Islam Week</a> -->
+                <a class="FBtn UL" href="https://www.greenwichsu.co.uk/societies/islamic" target="_blank">Greenwich
+                    Student Union</a>
+            </div>
+        </div>
+
+        <div class="designedText">
+            <a class="copyrightText" style="font-family: Montserrat;">&copy; 2020. Copyright - Islamic Society at
+                University of Greenwich. Designed by Isoc Greenwich</a>
+            <!--<a class="copyrightText adeshText" style="font-family: Montserrat;" href="#"> & Adesh(Ibrahim) Sookdewo</a> -->
+        </div>
+
+    </div>
+
+    <script>
+        slideshow();
+        timer();
+        changingPrayerTime();
+        currentTime();
+
+        function changeImage(imagePath) {
+
+            var img = document.getElementById("image");
+            img.src = imagePath;
+            return false;
+        }
+
+        function changeBooking(eventLink) {
+            var url = document.getElementById("bookingEvent");
+            url = eventLink;
+        }
+
+
+        function myFunction(imgs) {
+            var expandImg = document.getElementById("expandedImg");
+            var imgText = document.getElementById("imgtext");
+            expandImg.src = imgs.src;
+            imgText.innerHTML = imgs.alt;
+            expandImg.parentElement.style.display = "block";
+        }
+
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+            document.getElementById("navMenu").style.visibility = "hidden";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+            document.getElementById("navMenu").style.visibility = "visible";
+        }
+    </script>
+
+</body>
+
+</html>
