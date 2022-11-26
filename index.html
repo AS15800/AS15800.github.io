@@ -1,310 +1,328 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <title>Adesh's Personal website</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!--Bootstrap-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <!--Fonts-->
-    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
 
     <!--Ading CSS to HTML-->
-    <link rel="stylesheet" href="/CSS/main.css">
-    <link rel="stylesheet" href="/Projects/NavBar.css">
+    <link rel="stylesheet" href="/CSS/main.css" />
+    <link rel="stylesheet" href="/Projects/NavBar.css" />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <div class="Navbar">
-        <div class="topnav" id="myTopnav">
-            <a href="#myCarousel">Home</a>
-            <a href="#About">About</a>
-            <a href="#Experience">Experience</a>
-            <a href="#Education">Education</a>
-            <a href="#Projects">Projects</a>
-            <a href="#Skills">Skills</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-            </a>
-        </div>
+      <div class="topnav" id="myTopnav">
+        <a href="#myCarousel">Home</a>
+        <a href="#About">About</a>
+        <a href="#Experience">Experience</a>
+        <a href="#Education">Education</a>
+        <a href="#Projects">Projects</a>
+        <a href="#Skills">Skills</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
     </div>
 
     <script>
-        function myFunction() {
-            var x = document.getElementById("myTopnav");
-            if (x.className === "topnav") {
-                x.className += " responsive";
-            } else {
-                x.className = "topnav";
-            }
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
         }
+      }
 
-        jQuery(function($) {
-            var roles = ['Computer Science', 'Android Developer', 'Game Developer', 'Web Developer'];
-            //used to determine which is the next roles to be displayed
-            var counter = 0;
-            var $role = $('#jobs')
-                //repeat the passed function at the specified interval - it is in milliseconds
-            setInterval(function() {
-                //display the role and increment the counter to point to next role
-                $role.text(roles[counter++]);
-                //if it is the last role in the array point back to the first item
-                if (counter >= roles.length) {
-                    counter = 0;
-                }
-            }, 3000)
-        })
+      jQuery(function ($) {
+        var roles = [
+          "Computer Science",
+          "Android Developer",
+          "Game Developer",
+          "Web Developer",
+        ];
+        //used to determine which is the next roles to be displayed
+        var counter = 0;
+        var $role = $("#jobs");
+        //repeat the passed function at the specified interval - it is in milliseconds
+        setInterval(function () {
+          //display the role and increment the counter to point to next role
+          $role.text(roles[counter++]);
+          //if it is the last role in the array point back to the first item
+          if (counter >= roles.length) {
+            counter = 0;
+          }
+        }, 3000);
+      });
     </script>
     <!-- End of Navigation -->
 
-    <div id="myCarousel" class="carousel slide firstScreen" data-ride="carousel">
-
-        <img src="/img/img1.jpg" loading="eager">
-        <div class="carousel-caption">
-            <h1>Adesh Sookdewo</h1>
-            <h2 id="jobs">Computer Science</h2>
-            <a type="button" class="btn btn-default" href="/Assets/CV_Adesh Sookdewo.pdf" target="_blank">VIEW CV</a>
-        </div>
-        <a type="button">Scroll down</a>
-
+    <div
+      id="myCarousel"
+      class="carousel slide firstScreen"
+      data-ride="carousel"
+    >
+      <img src="/img/img1.jpg" loading="eager" />
+      <div class="carousel-caption">
+        <h1>Adesh Sookdewo</h1>
+        <h2 id="jobs">Computer Science</h2>
+        <a
+          type="button"
+          class="btn btn-default"
+          href="/Assets/CV_Adesh Sookdewo.pdf"
+          target="_blank"
+          >VIEW CV</a
+        >
+      </div>
+      <a type="button">Scroll down</a>
     </div>
 
     <div class="secondScreen container text-center" id="About">
-        <div class="row">
-            <div class="col-sm-4">
-                <h1 class="aboutMeTitle">About me</h1>
-            </div>
-            <div class="col-sm-4">
-                <p class="aboutMePara">
-                    <br><br> Hardworking and proactive programmer, experience with developing, testing and maintaining software applications. Designed game, mobile application and desktop programs from use case and functional requirements. Keen to utilise
-                    my programming and interpersonal skills in a diverse and fast moving environment.
-                </p>
-            </div>
+      <div class="row">
+        <div class="col-sm-4">
+          <h1 class="aboutMeTitle">About me</h1>
         </div>
-
+        <div class="col-sm-4">
+          <p class="aboutMePara">
+            <br /><br />
+            Hardworking and proactive programmer, experience with developing,
+            testing and maintaining software applications. Designed game, mobile
+            application and desktop programs from use case and functional
+            requirements. Keen to utilise my programming and interpersonal
+            skills in a diverse and fast moving environment.
+          </p>
+        </div>
+      </div>
     </div>
 
     <div class="thirdScreen" id="Experience">
-        <h1>Experience</h1>
-        <div class="experience-row">
-            <div class="dates">
-                <span class="datesRow">Sept 2020 to June 2021</span>
-                <span class="dot"></span>
-                <div class="experience-content">
-                    <h3>Islamic Society at University Of Greenwich</h3>
-                    <h4>President</h4>
-                    <ul>
-                        <li>
-                            Responsible for the overall running of the society
-                        </li>
-                        <li>
-                            Ensure all aims and objectives of the society are meant
-                        </li>
-                        <li>
-                            Motivate and ensure all the members are able to continue with their roles while not affecting their studies
-                        </li>
-                    </ul>
-                </div>
-            </div>
+      <h1>Experience</h1>
+      <div class="experience-row">
+        <div class="dates">
+          <span class="datesRow">Sept 2020 to June 2021</span>
+          <span class="dot"></span>
+          <div class="experience-content">
+            <h3>Islamic Society at University Of Greenwich</h3>
+            <h4>President</h4>
+            <ul>
+              <li>Responsible for the overall running of the society</li>
+              <li>Ensure all aims and objectives of the society are meant</li>
+              <li>
+                Motivate and ensure all the members are able to continue with
+                their roles while not affecting their studies
+              </li>
+            </ul>
+          </div>
         </div>
+      </div>
 
-        <div class="experience-row">
-            <div class="dates">
-                <span class="datesRow">Sept 2020 to June 2021</span>
-                <span class="dot"></span>
-                <div class="experience-content">
-                    <h3>Islamic Society at University Of Greenwich</h3>
-                    <h4>Vice-President</h4>
-                    <ul>
-                        <li>
-                            Frequently communicate with Student Union and University to represent students
-                        </li>
-                        <li>
-                            Making sure events and campaigns are running smoothly
-                        </li>
-                        <li>
-                            Communication with external organisation and individuals for events
-                        </li>
-                    </ul>
-                </div>
-            </div>
+      <div class="experience-row">
+        <div class="dates">
+          <span class="datesRow">Sept 2020 to June 2021</span>
+          <span class="dot"></span>
+          <div class="experience-content">
+            <h3>Islamic Society at University Of Greenwich</h3>
+            <h4>Vice-President</h4>
+            <ul>
+              <li>
+                Frequently communicate with Student Union and University to
+                represent students
+              </li>
+              <li>Making sure events and campaigns are running smoothly</li>
+              <li>
+                Communication with external organisation and individuals for
+                events
+              </li>
+            </ul>
+          </div>
         </div>
+      </div>
 
-        <div class="experience-row">
-            <div class="dates">
-                <span class="datesRow">Sept 2020 to June 2021</span>
-                <span class="dot"></span>
-                <div class="experience-content">
-                    <h3>Islamic Society at University Of Greenwich</h3>
-                    <h4>Activity Officer</h4>
-                    <ul>
-                        <li>
-                            Organised events and getting feedback from audience
-                        </li>
-                        <li>
-                            Advertise events and handle social media platforms
-                        </li>
-                        <li>
-                            Organised a charity campaign with Human Aid
-                        </li>
-                    </ul>
-                </div>
-            </div>
+      <div class="experience-row">
+        <div class="dates">
+          <span class="datesRow">Sept 2020 to June 2021</span>
+          <span class="dot"></span>
+          <div class="experience-content">
+            <h3>Islamic Society at University Of Greenwich</h3>
+            <h4>Activity Officer</h4>
+            <ul>
+              <li>Organised events and getting feedback from audience</li>
+              <li>Advertise events and handle social media platforms</li>
+              <li>Organised a charity campaign with Human Aid</li>
+            </ul>
+          </div>
         </div>
+      </div>
 
-        <div class="experience-row">
-            <div class="dates">
-                <span class="datesRow">June 2014 (1 Day)</span>
-                <span class="dot"></span>
-                <div class="experience-content">
-                    <h3>Audi</h3>
-                    <h4>Assistant Mechanic</h4>
-                    <ul>
-                        <li>
-                            Worked in a team to service different types of car
-                        </li>
-                        <li>
-                            Making sure the car meets the manufacturers requirements
-                        </li>
-                    </ul>
-                </div>
-            </div>
+      <div class="experience-row">
+        <div class="dates">
+          <span class="datesRow">June 2014 (1 Day)</span>
+          <span class="dot"></span>
+          <div class="experience-content">
+            <h3>Audi</h3>
+            <h4>Assistant Mechanic</h4>
+            <ul>
+              <li>Worked in a team to service different types of car</li>
+              <li>Making sure the car meets the manufacturers requirements</li>
+            </ul>
+          </div>
         </div>
+      </div>
 
-        <div class="experience-row">
-            <div class="dates">
-                <span class="datesRow">July 2013 (1 Week)</span>
-                <span class="dot"></span>
-                <div class="experience-content">
-                    <h3>Halford Autocentre</h3>
-                    <h4>Assistant Technician</h4>
-                    <ul>
-                        <li>
-                            Tyre repair and brake replacement
-                        </li>
-                        <li>
-                            Checking different part of the car for how well it means specific requirements
-                        </li>
-                        <li>
-                            Assisting colleagues
-                        </li>
-                    </ul>
-                </div>
-            </div>
+      <div class="experience-row">
+        <div class="dates">
+          <span class="datesRow">July 2013 (1 Week)</span>
+          <span class="dot"></span>
+          <div class="experience-content">
+            <h3>Halford Autocentre</h3>
+            <h4>Assistant Technician</h4>
+            <ul>
+              <li>Tyre repair and brake replacement</li>
+              <li>
+                Checking different part of the car for how well it means
+                specific requirements
+              </li>
+              <li>Assisting colleagues</li>
+            </ul>
+          </div>
         </div>
+      </div>
     </div>
 
     <div class="fourthScreen" id="Education">
-        <h1>Education</h1>
-        <div class="education-row">
-            <div class="label-colour"></div>
-            <h3>University Of Greenwich</h3>
-            <span class="education-date">Sept 2017 - June 2021</span>
-            <h4>Bachelor of Science (Honours) in Computer Science <b>2:1</b></h4>
-            <h4>Final Year Projects</h4>
-            <p>An educational game that takes a different approach to teaching programming to students with learning disabilities using Unity 3D.</p>
-        </div>
+      <h1>Education</h1>
+      <div class="education-row">
+        <div class="label-colour"></div>
+        <h3>University Of Greenwich</h3>
+        <span class="education-date">Sept 2017 - June 2021</span>
+        <h4>Bachelor of Science (Honours) in Computer Science <b>2:1</b></h4>
+        <h4>Final Year Projects</h4>
+        <p>
+          An educational game that takes a different approach to teaching
+          programming to students with learning disabilities using Unity 3D.
+        </p>
+      </div>
 
-        <div class="education-row">
-            <h3>Cheam High School</h3>
-            <span class="education-date">Sept 2010 - June 2016</span>
-            <h4>4 A-level</h4>
-            <p>Computing</p>
-            <p>User of Maths</p>
-            <p>Design Technology</p>
-            <p>Travel and Tourism</p>
-        </div>
+      <div class="education-row">
+        <h3>Cheam High School</h3>
+        <span class="education-date">Sept 2010 - June 2016</span>
+        <h4>4 A-level</h4>
+        <p>Computing</p>
+        <p>User of Maths</p>
+        <p>Design Technology</p>
+        <p>Travel and Tourism</p>
+      </div>
 
-        <div class="viewMoreBtn">
-            <a type="button" class="btnLearn" href="/Projects/AllQualifications.html" target="_blank">View Qualifications</a>
-        </div>
+      <div class="viewMoreBtn">
+        <a
+          type="button"
+          class="btnLearn"
+          href="/Projects/AllQualifications.html"
+          target="_blank"
+          >View Qualifications</a
+        >
+      </div>
     </div>
 
     <div class="fifthScreen" id="Projects">
         <h1>Projects</h1>
         
-        <div class="project-row">
-            <div class="text-content">
-                <h3 class="title">Salah 101: How to pray - Android</h3>
-                <hr class="divider">
-                <p>
-                    Salah 101 (currently in Beta) is a simple and very lightweight application that, currently, teaches the basic of how to do Wudu and how to Pray according to the Qur'an and Sunnah. The application is currently only avaiable on Android.
-                </p>
-                <div class="learnBtnDiv">
-                    <a type="button" class="btnLearn" target="_blank" href="https://play.google.com/store/apps/details?id=com.voidstudio.howtopray&hl=en&gl=US">App on Google Play</a>
+        <div class="row">
+            <div class="projects">
+                <div class="card">
+                    <div class="logo">
+                        <img
+                          src="https://play-lh.googleusercontent.com/m6FlkZqIwKHS1s9l9Alo4_v1sCA1MMNKjbjzkEhIG0G2p4CzBVJdL7rP6tNSq3AR0Fo=w240-h480-rw"
+                          loading="lazy"
+                        />
+                    </div>
+                    <h3 class="title">Salah 101: How to pray - Android</h3>
+                    <hr class="divider" />
+                    <p>
+                        Salah 101 (currently in Beta) is a simple and very lightweight application that, currently, teaches the basic of how to do Wudu and how to Pray according to the Qur'an and Sunnah. The application is currently only avaiable on Android.
+                    </p>
+                    <div class="learnBtnDiv">
+                        <a type="button" class="btnLearn" target="_blank" href="https://play.google.com/store/apps/details?id=com.voidstudio.howtopray&hl=en&gl=US">App on Google Play</a>
+                    </div>
                 </div>
             </div>
 
-            <div class="image-content logo">
-                <img src="https://play-lh.googleusercontent.com/m6FlkZqIwKHS1s9l9Alo4_v1sCA1MMNKjbjzkEhIG0G2p4CzBVJdL7rP6tNSq3AR0Fo=w240-h480-rw" loading="lazy">
-            </div>
-        </div>
-
-        <div class="project-row reverse-project">
-            <div class="text-content">
-                <h3 class="title">Islamic Society Greenwich Website</h3>
-                <hr class="divider">
-                <p>
-                    This is a prototype website built for the Islamic Soceity at University of Greenwich when I was part of the committee in 2020 to 2021. The website isn't currently being used by the society as it's not complete and it hasn't been communicated to the current committee. 
-                </p>
-                <div class="learnBtnDiv">
-                    <a type="button" class="btnLearn" target="_blank" href="/Projects/Isoc Greenwich/index.html">Visit Isoc Greenwich Website</a>
+            <div class="projects">
+                <div class="card">
+                    <div class="logo">
+                        <img
+                          src="/Projects/Isoc Greenwich/img/isoc_logo.jpeg"
+                          loading="lazy"
+                        />
+                    </div>
+                    <h3 class="title">Islamic Society Greenwich Website</h3>
+                    <hr class="divider" />
+                    <p>
+                        This is a prototype website built for the Islamic Soceity at University of Greenwich when I was part of the committee in 2020 to 2021. The website isn't currently being used by the society as it's not complete and it hasn't been communicated to the current committee. 
+                    </p>
+                    <div class="learnBtnDiv">
+                        <a type="button" class="btnLearn" target="_blank" href="/Projects/Isoc Greenwich/index.html">Visit Isoc Greenwich Website</a>
+                    </div>                
                 </div>
             </div>
-
-            <div class="image-content logo">
-                <img src="/Projects/Isoc Greenwich/img/isoc_logo.jpeg" loading="lazy">
-            </div>
+        
         </div>
-
-        <!--
-        <div class="viewMoreBtn">
-            <a type="button" class="btnLearn" href="/Projects/AllProject.html" target="_blank">View more Projects</a>
-        </div>
-        -->
-
+    
     </div>
 
     <div class="sixthScreen" id="Skills">
-        <h1>Skills</h1>
-        <ul>
-            <li>
-                Currently on a Data Science Bootcamp, expected to be compelted by end of January 2023
-            </li>
-            <li>
-                Proficient in C# and Java, learned JavaScript, C++, HTML, CSS, SQL, Python and Git.
-            </li>
-            <li>
-                Knowledge of Agile project management on Jira Atlassian, Office 365 and G Suite
-            </li>
-            <li>
-                Linux OS, Windows OS and Mac OS
-            </li>
-            <li>
-                Other software: Unreal Engine 4, Unity Adobe Suite, Blender and Figma
-            </li>
-            <li>
-                English (Fluent), French (Fluent) and Creole (Fluent)
-            </li>
-        </ul>
-
+      <h1>Skills</h1>
+      <ul>
+        <li>
+          Currently on a Data Science Bootcamp, expected to be compelted by end
+          of January 2023
+        </li>
+        <li>
+          Proficient in C# and Java, learned JavaScript, C++, HTML, CSS, SQL,
+          Python and Git.
+        </li>
+        <li>
+          Knowledge of Agile project management on Jira Atlassian, Office 365
+          and G Suite
+        </li>
+        <li>Linux OS, Windows OS and Mac OS</li>
+        <li>
+          Other software: Unreal Engine 4, Unity Adobe Suite, Blender and Figma
+        </li>
+        <li>English (Fluent), French (Fluent) and Creole (Fluent)</li>
+      </ul>
     </div>
 
     <div class="seventhScreen" id="Footer">
-        <footer>
-            <a href="https://www.linkedin.com/in/adeshsing-sookdewo/" target="_blank" class="fa fa-linkedin"></a>
-            <p>Author: Adesh Sookdewo<br>
-                <a href="mailto:adesh5800@hotmail.co.uk">adesh5800@hotmail.co.uk</a></p>
-        </footer>
-
+      <footer>
+        <a
+          href="https://www.linkedin.com/in/adeshsing-sookdewo/"
+          target="_blank"
+          class="fa fa-linkedin"
+        ></a>
+        <p>
+          Author: Adesh Sookdewo<br />
+          <a href="mailto:adesh5800@hotmail.co.uk">adesh5800@hotmail.co.uk</a>
+        </p>
+      </footer>
     </div>
-
-</body>
-
+  </body>
 </html>

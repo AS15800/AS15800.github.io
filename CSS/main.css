@@ -1,9 +1,9 @@
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    font-family: 'Montserrat';
+  font-family: "Montserrat";
 }
 /*
 
@@ -42,497 +42,481 @@ body {
 */
 
 .carousel-indicators li {
-    background-color: rgb(0, 0, 0);
+  background-color: rgb(0, 0, 0);
 }
 
 .carousel-inner,
 .item,
 .item img {
-    height: 100vh;
+  height: 100vh;
 }
 
 img {
-    opacity: 0.2;
+  opacity: 0.2;
 }
 
 .carousel-caption {
-    top: 0%;
-    transform: translateY(20%);
-    text-transform: uppercase;
-    left: 15%;
+  top: 0%;
+  transform: translateY(20%);
+  text-transform: uppercase;
+  left: 15%;
 }
 
 .carousel-caption h2 {
-    margin-top: 2%;
+  margin-top: 2%;
 }
 
 .btn {
-    font-size: 18px;
-    color: rgb(255, 255, 255);
-    padding: 10px;
-    background-color: rgb(56, 56, 56);
-    border: 2px solid #FFF;
-    border-radius: 30px;
-    width: 200px;
-    margin-top: 5%;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  background-color: rgb(56, 56, 56);
+  border: 2px solid #fff;
+  border-radius: 30px;
+  width: 200px;
+  margin-top: 5%;
 }
 
 .btn:hover {
-    color: rgb(0, 0, 0);
-    background-color: rgb(255, 255, 255);
-    border: 2px solid rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  border: 2px solid rgb(0, 0, 0);
 }
 
 h1 {
-    margin-top: 70px;
+  margin-top: 70px;
 }
 
 h1,
 h2,
 p {
-    color: #FFF;
-    text-align: center;
+  color: #fff;
+  text-align: center;
 }
 
 .firstScreen {
-    position: relative;
-    min-height: 250px;
-    max-height: 100vh;
-    background-color: #353535;
-    background-size: cover;
-    overflow: hidden;
-    width: 100%;
+  position: relative;
+  min-height: 250px;
+  max-height: 100vh;
+  background-color: #353535;
+  background-size: cover;
+  overflow: hidden;
+  width: 100%;
 }
 
 .secondScreen {
-    position: relative;
-    height: 100%;
-    max-height: 1080px;
-    background-color: #545454;
-    background-size: cover;
-    overflow: hidden;
-    width: 100%;
+  position: relative;
+  height: 100%;
+  max-height: 1080px;
+  background-color: #545454;
+  background-size: cover;
+  overflow: hidden;
+  width: 100%;
 }
 
 .aboutMePara {
-    color: #FFF;
-    font-size: 18px;
+  color: #fff;
+  font-size: 18px;
 }
 
 .aboutMeTitle {
-    color: #FFF;
-    margin-top: 10vh;
+  color: #fff;
+  margin-top: 10vh;
 }
 
 .thirdScreen {
-    position: relative;
-    height: 100%;
-    min-height: 500px;
-    max-height: 2080px;
-    background-color: #1f1f1f;
-    background-size: cover;
-    overflow: hidden;
-    width: 100%;
+  position: relative;
+  height: 100%;
+  min-height: 500px;
+  max-height: 2080px;
+  background-color: #1f1f1f;
+  background-size: cover;
+  overflow: hidden;
+  width: 100%;
 }
 
 .experience-row {
-    width: 100%;
-    margin-top: 2%;
+  width: 100%;
+  margin-top: 2%;
 }
 
 .dates {
-    position: relative;
-    display: block;
-    margin-bottom: 30px;
+  position: relative;
+  display: block;
+  margin-bottom: 30px;
 }
 
 .datesRow {
-    width: 260px;
-    text-align: right;
-    position: absolute;
-    left: 0;
-    top: 65px;
-    font-weight: 300;
-    color: #ffffff;
-    font-size: 16px;
+  width: 260px;
+  text-align: right;
+  position: absolute;
+  left: 0;
+  top: 65px;
+  font-weight: 300;
+  color: #ffffff;
+  font-size: 16px;
 }
 
 .dot {
-    position: relative;
-    color: #fff;
-    width: 50px;
-    height: 50px;
-    background: rgb(110, 110, 110);
-    border-radius: 50%;
-    float: left;
-    z-index: 99;
-    margin-left: 280px;
-    margin-top: 50px;
+  position: relative;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  background: rgb(110, 110, 110);
+  border-radius: 50%;
+  float: left;
+  z-index: 99;
+  margin-left: 280px;
+  margin-top: 50px;
 }
 
 .experience-content {
-    margin-left: 400px;
-    width: 60%;
-    background: rgb(75, 75, 75);
-    padding: 15px;
-    border-radius: 10px;
-    text-align: left;
+  margin-left: 400px;
+  width: 60%;
+  background: rgb(75, 75, 75);
+  padding: 15px;
+  border-radius: 10px;
+  text-align: left;
 }
 
 .experience-content h3 {
-    font-size: 1.5em;
-    font-weight: 300;
-    color: #ffffff;
-    display: inline-block;
-    margin: 0;
+  font-size: 1.5em;
+  font-weight: 300;
+  color: #ffffff;
+  display: inline-block;
+  margin: 0;
 }
 
 .experience-content h4 {
-    font-size: 1.2em;
-    font-weight: 300;
-    color: #bbc9d4;
-    margin: 0 0 15px 0;
+  font-size: 1.2em;
+  font-weight: 300;
+  color: #bbc9d4;
+  margin: 0 0 15px 0;
 }
 
 .experience-content ul {
-    color: #e0e0e0;
+  color: #e0e0e0;
 }
 
 .fourthScreen {
-    position: relative;
-    height: 100%;
-    min-height: 500px;
-    max-height: 2080px;
-    background-color: #545454;
-    background-size: cover;
-    overflow: hidden;
-    width: 100%;
+  position: relative;
+  height: 100%;
+  min-height: 500px;
+  max-height: 2080px;
+  background-color: #545454;
+  background-size: cover;
+  overflow: hidden;
+  width: 100%;
 }
 
 .education-row {
-    max-width: 1000px;
-    margin: 0 auto 30px auto;
-    padding: 15px;
-    background-color: #1f1f1f;
-    text-align: left;
-    border-radius: 10px;
+  max-width: 1000px;
+  margin: 0 auto 30px auto;
+  padding: 15px;
+  background-color: #1f1f1f;
+  text-align: left;
+  border-radius: 10px;
 }
 
 .education-row h3 {
-    font-weight: 500;
-    float: left;
-    margin: 0;
-    color: #ffffff;
+  font-weight: 500;
+  float: left;
+  margin: 0;
+  color: #ffffff;
 }
 
 .education-row span {
-    color: #bbc9d4;
-    float: right;
+  color: #bbc9d4;
+  float: right;
 }
 
 .education-row h4 {
-    color: #bbc9d4;
-    clear: both;
-    font-weight: 500;
-    margin: 0 0 15px 0;
+  color: #bbc9d4;
+  clear: both;
+  font-weight: 500;
+  margin: 0 0 15px 0;
 }
 
 .education-row p {
-    font-weight: 500;
-    text-align: left;
-    color: #e0e0e0;
-    margin: 0 0 15px 0;
+  font-weight: 500;
+  text-align: left;
+  color: #e0e0e0;
+  margin: 0 0 15px 0;
 }
 
 .fifthScreen {
-    position: relative;
-    height: 100%;
-    min-height: 500px;
-    background-color: #1f1f1f;
-    background-size: cover;
-    overflow: hidden;
-    width: 100%;
+  position: relative;
+  height: 100%;
+  min-height: 500px;
+  background-color: #1f1f1f;
+  background-size: cover;
+  overflow: hidden;
+  width: 100%;
 }
 
-.project-row {
-    width: 100%;
-    display: flex;
+.projects {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
 }
 
-.reverse-project {
-    display: flex;
-    flex-direction: row-reverse;
+.row {
+  margin: 0 -5px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-.text-content {
-    width: 50%;
-    height: 40vh;
-    padding-top: 2%;
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+  border-radius: 20px;
+  height: 70vh;
 }
 
-.text-content h3 {
-    font-weight: 500;
-    text-align: center;
-    margin: 0;
-    color: #ffffff;
+.card,
+p {
+  color: #000000;
 }
 
-.text-content p {
-    font-weight: 500;
-    text-align: center;
-    margin-top: 30px;
-    margin-left: 10%;
-    margin-right: 10%;
-    color: #cacaca;
+.logo {
+  justify-content: center;
 }
 
-.text-content {
-    text-align: center;
+.logo,
+img {
+  width: 8vw;
+  opacity: 1;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.learnBtnDiv {
-    margin-top: 30px;
+.learnBtnDiv{
+    margin-top: 10%;
+    margin-bottom: 5%;
 }
-
 .btnLearn {
-    background-color: rgb(0, 119, 255);
-    border-radius: 10px;
-    border: none;
-    color: #FFF;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 30px;
-    padding-left: 30px;
-    text-decoration: none;
+  background-color: rgb(0, 119, 255);
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 30px;
+  padding-left: 30px;
+  text-decoration: none;
 }
 
 .btnLearn:hover {
-    background-color: rgb(0, 91, 196);
-    color: #fff;
-    text-decoration: none;
-}
-
-.image-content {
-    width: 50%;
-}
-
-.image-content img {
-    width: auto;
-    height: 40vh;
-    top: 0;
-    margin-left: 25%;
-    opacity: 1;
-}
-
-.image-first {
-    text-align: left;
+  background-color: rgb(0, 91, 196);
+  color: #fff;
+  text-decoration: none;
 }
 
 .viewMoreBtn {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width: 100%;
-    text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  text-align: center;
 }
 
 .sixthScreen {
-    position: relative;
-    height: 100%;
-    min-height: 500px;
-    max-height: 1080px;
-    background-color: #545454;
-    background-size: cover;
-    overflow: hidden;
-    width: 100%;
+  position: relative;
+  height: 100%;
+  min-height: 500px;
+  max-height: 1080px;
+  background-color: #545454;
+  background-size: cover;
+  overflow: hidden;
+  width: 100%;
 }
 
 .sixthScreen ul {
-    display: block;
-    margin: 0 auto;
-    padding: 0;
-    max-width: 80%;
-    text-align: center;
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 80%;
+  text-align: center;
 }
 
 .sixthScreen li {
-    display: inline-block;
-    margin: 7px;
-    padding: 10px 20px;
-    color: #e4e4ea;
-    background: #1f1f1f;
-    list-style: none;
-    cursor: default;
-    font-size: 1.2em;
-    text-align: center;
-    width: 80%;
-    max-width: 100%;
-    border-radius: 10px;
+  display: inline-block;
+  margin: 7px;
+  padding: 10px 20px;
+  color: #e4e4ea;
+  background: #1f1f1f;
+  list-style: none;
+  cursor: default;
+  font-size: 1.2em;
+  text-align: center;
+  width: 80%;
+  max-width: 100%;
+  border-radius: 10px;
 }
 
 .seventhScreen {
-    position: relative;
-    height: 100%;
-    min-height: 200px;
-    max-height: 1080px;
-    background-color: #161616;
-    background-size: cover;
-    overflow: hidden;
-    width: 100%;
+  position: relative;
+  height: 100%;
+  min-height: 200px;
+  max-height: 1080px;
+  background-color: #161616;
+  background-size: cover;
+  overflow: hidden;
+  width: 100%;
 }
 
 .divider {
-    width: 50%;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    background-color: #3B98E3;
-    border: none;
-    height: 2px;
+  width: 50%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: #3b98e3;
+  border: none;
+  height: 2px;
 }
 
 @media (max-width: 1300px) {
-    .navbar {
-        transform: translate(0%, 0);
-        left: 0%;
-        right: 0%;
-    }
-    .carousel-inner,
-    .item,
-    .item img {
-        height: 50vh;
-    }
-    .aboutMePara {
-        font-size: 14px;
-    }
-    .datesRow {
-        width: 150px;
-        text-align: center;
-    }
-    .experience-content {
-        margin-left: 150px;
-        width: 80%;
-    }
-    .dot {
-        display: none;
-    }
-    .education-row {
-        margin-left: 10%;
-        width: 80%;
-    }
-    .education-row h3 {
-        font-size: 20px;
-    }
-    .education-row h4 {
-        font-size: 16px;
-        margin-top: 10px;
-    }
-    .education-row span {
-        font-size: 16px;
-        float: left;
-        margin-bottom: 10px;
-    }
-    .project-row {
-        display: table;
-        height: 100vh;
-    }
-    .text-content {
-        width: 100%;
-    }
-    .image-content {
-        width: 100%;
-    }
+  .navbar {
+    transform: translate(0%, 0);
+    left: 0%;
+    right: 0%;
+  }
+  .carousel-inner,
+  .item,
+  .item img {
+    height: 50vh;
+  }
+  .aboutMePara {
+    font-size: 14px;
+  }
+  .datesRow {
+    width: 150px;
+    text-align: center;
+  }
+  .experience-content {
+    margin-left: 150px;
+    width: 80%;
+  }
+  .dot {
+    display: none;
+  }
+  .education-row {
+    margin-left: 10%;
+    width: 80%;
+  }
+  .education-row h3 {
+    font-size: 20px;
+  }
+  .education-row h4 {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  .education-row span {
+    font-size: 16px;
+    float: left;
+    margin-bottom: 10px;
+  }
+
+  .row {
+    margin-left: 10%;
+  }
+
+  .card{
+    height: 50vh;
+  }
+
+  .projects {
+    width: 90%;
+    display: block;
+    margin-bottom: 20px;
+  }
 }
 
 @media (max-width: 767px) {
-    .navbar-inverse .navbar-collapse,
-    .navbar-inverse .navbar-form {
-        background-color: rgb(0, 0, 0);
-        border-color: #ffffff;
-        margin-left: -150%;
-        margin-right: 0%;
-    }
-    .navbar-toggle {
-        background-color: rgb(0, 0, 0);
-    }
-    .navbar {
-        left: 55%;
-        border-radius: 0;
-        background-color: rgba(255, 255, 255, 0);
-        border-style: none;
-    }
-    .carousel-caption {
-        top: 15%;
-        transform: translateY(0%);
-        text-transform: uppercase;
-    }
-    .carousel-caption h1,
-    h2 {
-        font-size: large;
-    }
-    .firstScreen {
-        height: 50vh;
-    }
-    .item {
-        height: 50vh;
-    }
-    .carousel-inner>.item>img {
-        height: 100%;
-    }
-    .carousel-caption {
-        margin-bottom: 50%;
-    }
-    .aboutMeTitle {
-        color: #FFF;
-        margin-top: 5%;
-        -ms-transform: translateY(0%);
-        transform: translateY(0%);
-    }
-    .aboutMePara {
-        font-size: 14px;
-    }
-    h1 {
-        font-size: 30px;
-        margin-top: 20px;
-    }
-    .dates {
-        position: relative;
-        display: inline-block;
-        margin-bottom: 30px;
-        width: 80%;
-        margin-left: 10%;
-    }
-    .datesRow {
-        width: 100%;
-        top: 0px;
-    }
-    .education-row {
-        margin-left: 10%;
-        width: 80%;
-    }
-    .experience-content {
-        margin-left: 0%;
-        width: 100%;
-        margin-top: 10%;
-    }
-    .education-row h3 {
-        font-size: 20px;
-    }
-    .education-row h4 {
-        font-size: 16px;
-        margin-top: 10px;
-    }
-    .education-row span {
-        font-size: 16px;
-        float: left;
-        margin-bottom: 10px;
-    }
-    .project-row {
-        display: table;
-        height: 100vh;
-    }
-    .text-content {
-        width: 100%;
-    }
-    .image-content {
-        width: 100%;
-    }
+  .navbar-inverse .navbar-collapse,
+  .navbar-inverse .navbar-form {
+    background-color: rgb(0, 0, 0);
+    border-color: #ffffff;
+    margin-left: -150%;
+    margin-right: 0%;
+  }
+  .navbar-toggle {
+    background-color: rgb(0, 0, 0);
+  }
+  .navbar {
+    left: 55%;
+    border-radius: 0;
+    background-color: rgba(255, 255, 255, 0);
+    border-style: none;
+  }
+  .carousel-caption {
+    top: 15%;
+    transform: translateY(0%);
+    text-transform: uppercase;
+  }
+  .carousel-caption h1,
+  h2 {
+    font-size: large;
+  }
+  .firstScreen {
+    height: 50vh;
+  }
+  .item {
+    height: 50vh;
+  }
+  .carousel-inner > .item > img {
+    height: 100%;
+  }
+  .carousel-caption {
+    margin-bottom: 50%;
+  }
+  .aboutMeTitle {
+    color: #fff;
+    margin-top: 5%;
+    -ms-transform: translateY(0%);
+    transform: translateY(0%);
+  }
+  .aboutMePara {
+    font-size: 14px;
+  }
+  h1 {
+    font-size: 30px;
+    margin-top: 20px;
+  }
+  .dates {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 30px;
+    width: 80%;
+    margin-left: 10%;
+  }
+  .datesRow {
+    width: 100%;
+    top: 0px;
+  }
+  .education-row {
+    margin-left: 10%;
+    width: 80%;
+  }
+  .experience-content {
+    margin-left: 0%;
+    width: 100%;
+    margin-top: 10%;
+  }
+  .education-row h3 {
+    font-size: 20px;
+  }
+  .education-row h4 {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  .education-row span {
+    font-size: 16px;
+    float: left;
+    margin-bottom: 10px;
+  }
 }
