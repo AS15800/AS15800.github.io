@@ -4,55 +4,58 @@ html {
 
 body {
   font-family: "Montserrat";
-}
-/*
-
-.navContainer {
-    width: 100%;
-    background-color: #000000;
+  margin: 0;
 }
 
-.navbar {
-    margin-bottom: 0;
-    background-color: rgb(0, 0, 0, 0.8);
-    font-size: 1.2em;
-    z-index: 15;
-    position: fixed;
-    transform: translate(-50%, 0);
-    left: 50%;
-    border-radius: 5px;
+.menu {
+	text-align: center;
+	align-items: center;
 }
 
-.navbar-inverse .navbar-nav li a {
-    color: rgb(255, 255, 255);
+.menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	z-index: 10;
+	display: inline-block;
+	position: fixed;
+	transform: translate(-50%, 0%);
 }
 
-.active,
-.navbar-inverse .navbar-nav li:hover {
-    background-color: #616161;
-    color: white;
+.menu li a {
+	color: white;
+	padding: 20px;
+	text-decoration: none;
+	font-family: 'Montserrat';
 }
 
-.navbar-inverse .navbar-nav .active a,
-.navbar-inverse .navbar-nav .active a:focus,
-.navbar-inverse .navbar-nav .active a:hover {
-    color: rgb(0, 0, 0);
-    background-color: rgb(61, 61, 61);
+.menu li a:hover {
+	background-color: #111;
+	color: aquamarine;
 }
-*/
+
+.menu li {
+	display: inline;
+}
+.overlay {
+	display: none;
+}
+.spanNav{
+  display: none;
+}
 
 .carousel-indicators li {
   background-color: rgb(0, 0, 0);
 }
 
-.carousel-inner,
-.item,
-.item img {
+.firstBackground{
   height: 100vh;
-}
-
-img {
-  opacity: 0.2;
+  width: 100vw;
+  opacity: 0.4;
 }
 
 .carousel-caption {
@@ -96,7 +99,7 @@ p {
 
 .firstScreen {
   position: relative;
-  min-height: 250px;
+  min-height: 100vh;
   max-height: 100vh;
   background-color: #353535;
   background-size: cover;
@@ -380,11 +383,62 @@ img {
 }
 
 @media (max-width: 1300px) {
-  .navbar {
-    transform: translate(0%, 0);
-    left: 0%;
-    right: 0%;
-  }
+  .menu {
+		visibility: hidden;
+	}
+
+	.spanNav {
+		color: #ddd;
+		font-size: 30px;
+		cursor: pointer;
+		position: fixed;
+		z-index: 10;
+		margin-left: -10px;
+		background-color: #000;
+		padding: 10px 40px;
+	}
+	.overlay {
+		display: block;
+		height: 100%;
+		width: 0;
+		position: fixed;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		background-color: rgba(0, 0, 0, 0.95);
+		overflow-x: hidden;
+		transition: 0.3s;
+	}
+
+	.overlay-content {
+		position: relative;
+		top: 25%;
+		width: 100%;
+		text-align: center;
+		margin-top: 30px;
+	}
+
+	.overlay a {
+		padding: 8px;
+		text-decoration: none;
+		font-size: 36px;
+		color: #e4e4e4;
+		display: block;
+		transition: 0.3s;
+	}
+
+	.overlay a:hover,
+	.overlay a:focus {
+		color: #f1f1f1;
+	}
+
+	.overlay .closebtn {
+		position: absolute;
+		top: 20px;
+		right: 45px;
+		font-size: 60px;
+	}
+
   .carousel-inner,
   .item,
   .item img {

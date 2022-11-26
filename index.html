@@ -28,21 +28,41 @@
   </head>
 
   <body>
-    <div class="Navbar">
-      <div class="topnav" id="myTopnav">
-        <a href="#myCarousel">Home</a>
-        <a href="#About">About</a>
-        <a href="#Experience">Experience</a>
-        <a href="#Education">Education</a>
-        <a href="#Projects">Projects</a>
-        <a href="#Skills">Skills</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
+
+    <div class="menu" id="topNav">
+      <ul>
+          <li><a href="#myCarousel">Home</a></li>
+          <li><a href="#About">About</a></li>
+          <li><a href="#Experience">Experience</a></li>
+          <li><a href="#Education">Education</a></li>
+          <li><a href="#Projects">Projects</a></li>
+          <li><a href="#Skills">Skills</a></li>
+      </ul>
+  </div>
+
+  <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+          <a href="#myCarousel" onclick="closeNav()">Home</a>
+          <a href="#About" onclick="closeNav()">About</a>
+          <a href="#Experience" onclick="closeNav()">Experience</a>
+          <a href="#Education" onclick="closeNav()">Education</a>
+          <a href="#Projects" onclick="closeNav()">Projects</a>
+          <a href="#Skills" onclick="closeNav()">Skills</a>
       </div>
-    </div>
+  </div>
+  <span id="navMenu" class="spanNav" onclick="openNav()">&#9776;</span>
 
     <script>
+      function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+            document.getElementById("navMenu").style.visibility = "hidden";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+            document.getElementById("navMenu").style.visibility = "visible";
+        }
       function myFunction() {
         var x = document.getElementById("myTopnav");
         if (x.className === "topnav") {
@@ -80,7 +100,7 @@
       class="carousel slide firstScreen"
       data-ride="carousel"
     >
-      <img src="/img/img1.jpg" loading="eager" />
+      <img class="firstBackground" src="/img/img1.jpg" loading="eager" />
       <div class="carousel-caption">
         <h1>Adesh Sookdewo</h1>
         <h2 id="jobs">Computer Science</h2>
@@ -92,7 +112,6 @@
           >VIEW CV</a
         >
       </div>
-      <a type="button">Scroll down</a>
     </div>
 
     <div class="secondScreen container text-center" id="About">
