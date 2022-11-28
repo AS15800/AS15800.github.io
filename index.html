@@ -27,41 +27,42 @@
   </head>
 
   <body>
-
     <div class="menu" id="topNav">
       <ul>
-          <li><a href="#myCarousel">Home</a></li>
-          <li><a href="#About">About</a></li>
-          <li><a href="#Experience">Experience</a></li>
-          <li><a href="#Education">Education</a></li>
-          <li><a href="#Projects">Projects</a></li>
-          <li><a href="#Skills">Skills</a></li>
+        <li><a href="#myCarousel">Home</a></li>
+        <li><a href="#About">About</a></li>
+        <li><a href="#Experience">Experience</a></li>
+        <li><a href="#Education">Education</a></li>
+        <li><a href="#Projects">Projects</a></li>
+        <li><a href="#Skills">Skills</a></li>
       </ul>
-  </div>
+    </div>
 
-  <div id="myNav" class="overlay">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
       <div class="overlay-content">
-          <a href="#myCarousel" onclick="closeNav()">Home</a>
-          <a href="#About" onclick="closeNav()">About</a>
-          <a href="#Experience" onclick="closeNav()">Experience</a>
-          <a href="#Education" onclick="closeNav()">Education</a>
-          <a href="#Projects" onclick="closeNav()">Projects</a>
-          <a href="#Skills" onclick="closeNav()">Skills</a>
+        <a href="#myCarousel" onclick="closeNav()">Home</a>
+        <a href="#About" onclick="closeNav()">About</a>
+        <a href="#Experience" onclick="closeNav()">Experience</a>
+        <a href="#Education" onclick="closeNav()">Education</a>
+        <a href="#Projects" onclick="closeNav()">Projects</a>
+        <a href="#Skills" onclick="closeNav()">Skills</a>
       </div>
-  </div>
-  <span id="navMenu" class="spanNav" onclick="openNav()">&#9776;</span>
+    </div>
+    <span id="navMenu" class="spanNav" onclick="openNav()">&#9776;</span>
 
     <script>
       function openNav() {
-            document.getElementById("myNav").style.width = "100%";
-            document.getElementById("navMenu").style.visibility = "hidden";
-        }
+        document.getElementById("myNav").style.width = "100%";
+        document.getElementById("navMenu").style.visibility = "hidden";
+      }
 
-        function closeNav() {
-            document.getElementById("myNav").style.width = "0%";
-            document.getElementById("navMenu").style.visibility = "visible";
-        }
+      function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+        document.getElementById("navMenu").style.visibility = "visible";
+      }
 
       jQuery(function ($) {
         var roles = [
@@ -89,8 +90,7 @@
     <div
       id="myCarousel"
       class="carousel slide firstScreen"
-      data-ride="carousel"
-    >
+      data-ride="carousel">
       <img class="firstBackground" src="/img/img1.jpg" loading="eager" />
       <div class="carousel-caption">
         <h1>Adesh Sookdewo</h1>
@@ -100,9 +100,9 @@
           class="btn btn-default"
           href="/Assets/CV_Adesh Sookdewo.pdf"
           target="_blank"
-          >VIEW CV</a
-        >
+          >VIEW CV</a>
       </div>
+              
     </div>
 
     <div class="secondScreen container text-center" id="About">
@@ -121,6 +121,11 @@
           </p>
         </div>
       </div>
+      <div class="badge">
+        <script
+      src="https://platform.linkedin.com/badges/js/profile.js" asyncdefertype="text/javascript"></script>
+        <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark" data-type="HORIZONTAL" data-vanity="adeshsing-sookdewo" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/adeshsing-sookdewo/"></a></div>
+      </div>              
     </div>
 
     <div class="thirdScreen" id="Experience">
@@ -253,49 +258,66 @@
     </div>
 
     <div class="fifthScreen" id="Projects">
-        <h1>Projects</h1>
-        
-        <div class="row">
-            <div class="projects">
-                <div class="card">
-                    <div class="logo">
-                        <img
-                          src="https://play-lh.googleusercontent.com/m6FlkZqIwKHS1s9l9Alo4_v1sCA1MMNKjbjzkEhIG0G2p4CzBVJdL7rP6tNSq3AR0Fo=w240-h480-rw"
-                          loading="lazy"
-                        />
-                    </div>
-                    <h3 class="title">Salah 101: How to pray - Android</h3>
-                    <hr class="divider" />
-                    <p>
-                        Salah 101 (currently in Beta) is a simple and very lightweight application that, currently, teaches the basic of how to do Wudu and how to Pray according to the Qur'an and Sunnah. The application is currently only avaiable on Android.
-                    </p>
-                    <div class="learnBtnDiv">
-                        <a type="button" class="btnLearn" target="_blank" href="https://play.google.com/store/apps/details?id=com.voidstudio.howtopray&hl=en&gl=US">App on Google Play</a>
-                    </div>
-                </div>
-            </div>
+      <h1>Projects</h1>
 
-            <div class="projects">
-                <div class="card">
-                    <div class="logo">
-                        <img
-                          src="/Projects/Isoc Greenwich/img/isoc_logo.jpeg"
-                          loading="lazy"
-                        />
-                    </div>
-                    <h3 class="title">Islamic Society Greenwich Website</h3>
-                    <hr class="divider" />
-                    <p>
-                        This is a prototype website built for the Islamic Soceity at University of Greenwich when I was part of the committee in 2020 to 2021. The website isn't currently being used by the society as it's not complete and it hasn't been communicated to the current committee. 
-                    </p>
-                    <div class="learnBtnDiv">
-                        <a type="button" class="btnLearn" target="_blank" href="/Projects/Isoc Greenwich/index.html">Visit Isoc Greenwich Website</a>
-                    </div>                
-                </div>
+      <div class="row">
+        <div class="projects">
+          <div class="card">
+            <div class="logo">
+              <img
+                src="https://play-lh.googleusercontent.com/m6FlkZqIwKHS1s9l9Alo4_v1sCA1MMNKjbjzkEhIG0G2p4CzBVJdL7rP6tNSq3AR0Fo=w240-h480-rw"
+                loading="lazy"
+              />
             </div>
-        
+            <h3 class="title">Salah 101: How to pray - Android</h3>
+            <hr class="divider" />
+            <p>
+              Salah 101 (currently in Beta) is a simple and very lightweight
+              application that, currently, teaches the basic of how to do Wudu
+              and how to Pray according to the Qur'an and Sunnah. The
+              application is currently only avaiable on Android.
+            </p>
+            <div class="learnBtnDiv">
+              <a
+                type="button"
+                class="btnLearn"
+                target="_blank"
+                href="https://play.google.com/store/apps/details?id=com.voidstudio.howtopray&hl=en&gl=US"
+                >App on Google Play</a
+              >
+            </div>
+          </div>
         </div>
-    
+
+        <div class="projects">
+          <div class="card">
+            <div class="logo">
+              <img
+                src="/Projects/Isoc Greenwich/img/isoc_logo.jpeg"
+                loading="lazy"
+              />
+            </div>
+            <h3 class="title">Islamic Society Greenwich Website</h3>
+            <hr class="divider" />
+            <p>
+              This is a prototype website built for the Islamic Soceity at
+              University of Greenwich when I was part of the committee in 2020
+              to 2021. The website isn't currently being used by the society as
+              it's not complete and it hasn't been communicated to the current
+              committee.
+            </p>
+            <div class="learnBtnDiv">
+              <a
+                type="button"
+                class="btnLearn"
+                target="_blank"
+                href="/Projects/Isoc Greenwich/index.html"
+                >Visit Isoc Greenwich Website</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="sixthScreen" id="Skills">
