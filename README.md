@@ -1,5 +1,5 @@
 <div> 
-  <h1 align="center"><a href="https://www.as15800github.io.org/" target="_blank">Personal Website</a></h1>
+  <h1 align="center"><a href="https://www.as15800github.io" target="_blank">Personal Website</a></h1>
   <p>
   A personal website that shows my education, skills, projects and information about me. This website is built using HTML, CSS and JavaScript and hosted using GitHub pages.
   </p>
