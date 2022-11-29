@@ -17,13 +17,14 @@ body {
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
-	background-color: #333;
+	background-color: rgb(20, 55, 70);
 	padding-top: 15px;
 	padding-bottom: 15px;
 	z-index: 100;
 	display: inline-block;
 	position: fixed;
 	transform: translate(-50%, 0%);
+  width: 100%;
 }
 
 .menu li a {
@@ -265,8 +266,9 @@ p {
 }
 
 .projects {
+  margin-top: 20px;
   float: left;
-  width: 25%;
+  width: 20%;
   padding: 0 10px;
 }
 
@@ -283,14 +285,14 @@ p {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 16px;
   text-align: center;
-  background-color: #f1f1f1;
+  background-color: #545454;
   border-radius: 20px;
-  height: 500px;
+  height: 550px;
 }
 
 .card
-p {
-  color: #000000;
+p, h3 {
+  color: #ffffff;
 }
 
 .logo {
