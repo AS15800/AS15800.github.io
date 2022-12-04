@@ -17,7 +17,7 @@ body {
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
-	background-color: #192b35;
+	background-color: #000000;
 	padding-top: 15px;
 	padding-bottom: 15px;
 	z-index: 100;
@@ -63,14 +63,20 @@ body {
   top: 0%;
   transform: translateY(20%);
   text-transform: uppercase;
-  left: 15%;
+  left: 20%;
 }
 .carousel-caption h1{
-  color: #ddd;
+  z-index: 100;
+  justify-content: center;
+  color: #FFFFFF;
+  margin-left: 3%;
+  margin-top: 10%;
 }
 
 .carousel-caption h2 {
+  margin-left: 3%;
   margin-top: 2%;
+  margin-bottom: 10%;
 }
 
 .btn {
@@ -82,6 +88,7 @@ body {
   border-radius: 30px;
   width: 200px;
   margin-top: 5%;
+  margin-left: 48%;
 }
 
 .btn:hover {
@@ -118,7 +125,15 @@ p {
   background-color: #182329;
   background-size: cover;
   overflow: hidden;
-  width: 100vw;
+  width: 100%
+}
+
+.aboutTitleFrame{
+  margin-right: 10%;
+}
+
+.aboutParaFrame{
+  width: 45vw;
 }
 
 .aboutMePara {
