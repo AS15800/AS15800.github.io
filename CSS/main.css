@@ -146,13 +146,6 @@ p {
   margin-top: 10vh;
 }
 
-.badge {
-  width: 100%;
-  background-color: #182329;
-  display: flex;
-  justify-content: center;
-}
-
 .thirdScreen {
   position: relative;
   height: 100%;
