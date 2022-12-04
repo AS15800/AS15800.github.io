@@ -65,6 +65,9 @@ body {
   text-transform: uppercase;
   left: 15%;
 }
+.carousel-caption h1{
+  color: #ddd;
+}
 
 .carousel-caption h2 {
   margin-top: 2%;
