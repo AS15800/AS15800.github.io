@@ -1,0 +1,175 @@
+html {
+	scroll-behavior: smooth;
+  }
+
+body {
+	margin: 0;
+	background-color: #000;
+}
+
+a,
+p,
+h3,
+h1 {
+	font-family: 'Montserrat';
+}
+
+/*
+Propertise for the menu
+*/
+
+.menu {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #00434763;
+	margin: auto;
+	z-index: 10;
+	display: inline-flex;
+	position: fixed;
+	width: 100%;
+}
+
+.logo {
+	width: 50px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*
+Propertise for the screen
+*/
+
+.firstScreen {
+	position: relative;
+	height: 100vh;
+	min-height: 500px;
+	max-height: 1080px;
+	background-size: cover;
+	overflow: hidden;
+    width: 100%;
+	background-color: #121212;
+	display: flex;
+}
+
+.infoScreen{
+	width: 50%;
+	height: 100%;
+}
+.divider{
+	width: 60%;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	background-color: #3B98E3;
+	border: none;
+	height: 2px;
+	margin-left: 100px;
+}
+.infoScreen h1{
+	margin-top: 200px;
+	color: #FFFFFF;
+	width: 100%;
+	text-align: left;
+	margin-left: 100px;	
+	letter-spacing: 15px;
+}
+
+.infoScreen a{
+	color: #3B98E3;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.infoScreen a:hover{
+	color: #FFFFFF;
+	cursor: pointer;
+}
+
+.specificText{
+	width: 75%;
+	margin-left: 100px;
+	height: 100%;
+}
+
+.infoScreen p{
+	color: #c7c7c7;
+	font-size: 1.2rem;
+}
+
+
+.picScreen{
+	width: 50%;
+	height: 100%;
+}
+
+.picScreen img{
+	height: 100%;
+	width: 100%;
+}
+
+.firstPic{
+	margin-top: 55px;
+}
+
+.secondScreen {
+	position: relative;
+	height: 100vh;
+	min-height: 500px;
+	max-height: 1080px;
+	background-size: cover;
+	overflow: hidden;
+    width: 100%;
+	background-color: #121212;
+	display: flex;
+}
+
+
+@media only screen and (max-device-width: 480px){
+	.logo {
+		width: 100px;
+		padding-left: 0px;
+	}
+
+	.firstScreen {
+		height: auto;
+		max-height: 4000px;
+		display: block;
+	}
+
+	.secondScreen{
+		height: auto;
+		max-height: 4000px;
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+	.infoScreen{
+		width: 100%;
+		height: auto;
+	}
+
+	.infoScreen h1{
+		font-size: 50px;
+		text-align: center;
+		margin-left: 0;
+	}
+
+	.specificText{
+		text-align: center;
+	}
+
+	.specificText p{
+		font-size: 40px;
+		color: #adadad;
+	}
+
+	.specificText a{
+		font-size: 30px;
+	}
+
+	.picScreen{
+		width: 100%;
+		height: 50%;
+	}
+}
