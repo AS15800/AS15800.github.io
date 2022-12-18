@@ -359,7 +359,14 @@ img {
   border-radius: 10px;
   border: none;
   color: #fff;
+<<<<<<< HEAD
   padding: 10px;
+=======
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+>>>>>>> 854dd47a8434ac5999942e995e82118298610f9d
   text-decoration: none;
 }
 
