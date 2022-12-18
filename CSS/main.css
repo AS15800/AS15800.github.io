@@ -359,10 +359,7 @@ img {
   border-radius: 10px;
   border: none;
   color: #fff;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-right: 30px;
-  padding-left: 30px;
+  padding: 10px;
   text-decoration: none;
 }
 
@@ -434,6 +431,11 @@ img {
   height: 2px;
 }
 
+.emailText{
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
 @media (max-width: 1300px) {
   .menu {
 		visibility: hidden;
@@ -499,8 +501,14 @@ img {
   .item img {
     height: 50vh;
   }
-  .aboutMePara {
+  .aboutTitleFrame{
+    margin-left: 0%;
+  }
+  .aboutParaFrame {
     font-size: 14px;
+    margin-left: 7%;
+    width: 80vw;
+    margin-top: 0%;
   }
   .datesRow {
     width: 150px;
@@ -531,11 +539,12 @@ img {
   }
 
   .row {
-    margin-left: 10%;
+    margin: 10px;
+    display: block;
   }
 
   .card{
-    max-height: 50vh;
+    max-height: 65vh;
   }
 
   .projects {
@@ -543,17 +552,15 @@ img {
     display: block;
     margin-bottom: 20px;
   }
+  .sixthScreen li{
+    font-size: 1em;
+  }
 }
 
 @media (max-width: 767px) {
   .carousel-caption {
-    top: 15%;
-    transform: translateY(0%);
+    margin-top: 30%;
     text-transform: uppercase;
-  }
-  .carousel-caption h1,
-  h2 {
-    font-size: large;
   }
   .firstScreen {
     height: 50vh;
@@ -580,19 +587,22 @@ img {
     font-size: 30px;
     margin-top: 20px;
   }
+  .btn{
+    margin-left: 35%;
+  }
   .dates {
     position: relative;
     display: inline-block;
     margin-bottom: 30px;
     width: 80%;
-    margin-left: 10%;
+    margin-left: 5%;
   }
   .datesRow {
     width: 100%;
     top: 0px;
   }
   .education-row {
-    margin-left: 10%;
+    margin-left: 5%;
     width: 80%;
   }
   .experience-content {
