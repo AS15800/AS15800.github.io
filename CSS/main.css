@@ -385,11 +385,11 @@ p {
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 16px;
+  padding: 30px;
   text-align: center;
   background-color: #334955;
   border-radius: 20px;
-  height: 500px;
+  min-height: 500px;
 }
 
 .card
@@ -606,8 +606,13 @@ img {
     display: block;
   }
 
-  .card{
-    max-height: 65vh;
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    text-align: center;
+    background-color: #334955;
+    border-radius: 20px;
+    max-height: 500px;
   }
 
   .projects {
