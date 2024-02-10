@@ -278,6 +278,23 @@ p {
   text-align: center;
 }
 
+.filterBtn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.filterBtn:hover {
+  background-color: #ddd;
+}
+
+.filterBtn.active {
+  background-color: #666;
+  color: white;
+}
+
 .button {
   border-radius: 6px;
   background-color: #d3a016;
