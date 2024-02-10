@@ -277,7 +277,15 @@ p {
   width: 100%;
   text-align: center;
 }
-
+.filterDiv {
+  color: #ffffff;
+  text-align: center;
+  margin: 2px;
+  display: none;
+}
+.show {
+  display: block;
+}
 .filterBtn {
   border: none;
   outline: none;
@@ -603,9 +611,10 @@ img {
   }
 
   .projects {
-    width: 90%;
-    display: block;
+    width: 97%;
     margin-bottom: 20px;
+    float: none;
+    margin: 10px;
   }
   .sixthScreen li{
     font-size: 1em;
