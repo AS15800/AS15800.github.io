@@ -277,6 +277,31 @@ p {
   width: 100%;
   text-align: center;
 }
+.filterDiv {
+  color: #ffffff;
+  text-align: center;
+  margin: 2px;
+  display: none;
+}
+.show {
+  display: block;
+}
+.filterBtn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.filterBtn:hover {
+  background-color: #ddd;
+}
+
+.filterBtn.active {
+  background-color: #666;
+  color: white;
+}
 
 .button {
   border-radius: 6px;
@@ -360,11 +385,11 @@ p {
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 16px;
+  padding: 30px;
   text-align: center;
   background-color: #334955;
   border-radius: 20px;
-  height: 500px;
+  min-height: 500px;
 }
 
 .card
@@ -553,7 +578,7 @@ img {
     text-align: center;
   }
   .experience-content {
-    margin-left: 150px;
+    margin-left: 60px;
     width: 80%;
   }
   .dot {
@@ -581,14 +606,20 @@ img {
     display: block;
   }
 
-  .card{
-    max-height: 65vh;
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    text-align: center;
+    background-color: #334955;
+    border-radius: 20px;
+    max-height: 500px;
   }
 
   .projects {
-    width: 90%;
-    display: block;
+    width: 97%;
     margin-bottom: 20px;
+    float: none;
+    margin: 10px;
   }
   .sixthScreen li{
     font-size: 1em;
