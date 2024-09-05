@@ -385,29 +385,36 @@ p {
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 30px;
+  padding: 20px;
   text-align: center;
   background-color: #334955;
   border-radius: 20px;
-  min-height: 500px;
+  min-height: 1vh;
 }
 
 .card
 p, h3 {
   color: #ffffff;
+  text-decoration: none;
+  width: 20vw;
+  margin-top: 0;
 }
 
 .logo {
   justify-content: center;
 }
 
+.logo a{
+  width: 20vw;
+  display: block;
+}
+
 .logo
 img {
-  width: 8vw;
+  width: 20vw;
   opacity: 1;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  border-radius: 10px;
 }
 
 .learnBtnDiv{
@@ -589,6 +596,7 @@ img {
     width: 80%;
   }
   .education-row h3 {
+
     font-size: 20px;
   }
   .education-row h4 {

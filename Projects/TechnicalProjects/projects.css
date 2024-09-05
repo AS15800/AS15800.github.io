@@ -14,47 +14,40 @@ h1 {
 	font-family: 'Montserrat';
 }
 
-/*
-Propertise for the menu
-*/
-
-.menu {
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	background-color: #00434763;
-	margin: auto;
-	z-index: 10;
-	display: inline-flex;
-	position: fixed;
-	width: 100%;
-}
-
-.logo {
-	width: 50px;
+.logo{
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+	border-radius: 20px;
+	width: 10%;
+	margin-top: 20px;
 }
 
-/*
-Propertise for the screen
-*/
+.statText{
+	color: #FFFFFF;
+	text-align: center;
+}
 
 .firstScreen {
 	position: relative;
-	height: 100vh;
+	height: 50vh;
 	min-height: 500px;
 	max-height: 1080px;
 	background-size: cover;
 	overflow: hidden;
-    width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+    width: 90%;
 	background-color: #121212;
 	display: flex;
+	margin-bottom: 20px;
+	border-radius: 20px;
+	border: 1px solid #ff9cfc;
+	box-shadow: 0 0 1px #fff, 0 0 20px #FF00F5;
 }
 
 .infoScreen{
-	width: 50%;
+	width: 100%;
 	height: 100%;
 }
 .divider{
@@ -67,7 +60,7 @@ Propertise for the screen
 	margin-left: 100px;
 }
 .infoScreen h1{
-	margin-top: 200px;
+	margin-top: 50px;
 	color: #FFFFFF;
 	width: 100%;
 	text-align: left;
@@ -75,53 +68,23 @@ Propertise for the screen
 	letter-spacing: 15px;
 }
 
-.infoScreen a{
-	color: #3B98E3;
-	font-weight: bold;
-	text-decoration: none;
-}
-
-.infoScreen a:hover{
-	color: #FFFFFF;
-	cursor: pointer;
-}
-
 .specificText{
 	width: 75%;
 	margin-left: 100px;
 	height: 100%;
-}
-
-.infoScreen p{
 	color: #c7c7c7;
 	font-size: 1.2rem;
 }
 
 
 .picScreen{
-	width: 50%;
+	width: 100%;
 	height: 100%;
 }
 
 .picScreen img{
 	height: 100%;
 	width: 100%;
-}
-
-.firstPic{
-	margin-top: 55px;
-}
-
-.secondScreen {
-	position: relative;
-	height: 100vh;
-	min-height: 500px;
-	max-height: 1080px;
-	background-size: cover;
-	overflow: hidden;
-    width: 100%;
-	background-color: #121212;
-	display: flex;
 }
 
 
@@ -160,7 +123,7 @@ Propertise for the screen
 	}
 
 	.specificText p{
-		font-size: 40px;
+		font-size: 30px;
 		color: #adadad;
 	}
 
