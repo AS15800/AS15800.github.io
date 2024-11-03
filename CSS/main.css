@@ -278,11 +278,28 @@ p {
   text-align: center;
 }
 .filterDiv {
+  width: 20%;
   color: #ffffff;
   text-align: center;
   margin: 2px;
   display: none;
+  border-radius: 20px;
 }
+
+.container{
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  align-items: center;
+}
+
+.projectImage{
+  max-width: 400%;
+  height: auto;
+  display: block;
+}
+
 .show {
   display: block;
 }
@@ -341,13 +358,6 @@ p {
   opacity: 1;
   right: 0;
 }
-
-.projects {
-  margin-top: 20px;
-  float: left;
-  width: 23%;
-  margin: 10px;
-}
 .row:after {
   content: "";
   display: table;
@@ -400,22 +410,6 @@ p, h3 {
   margin-top: 0;
 }
 
-.logo {
-  justify-content: center;
-}
-
-.logo a{
-  width: 20vw;
-  display: block;
-}
-
-.logo
-img {
-  width: 20vw;
-  opacity: 1;
-  display: block;
-  border-radius: 10px;
-}
 
 .learnBtnDiv{
   margin-top: 40px;
@@ -624,7 +618,6 @@ img {
   }
 
   .projects {
-    width: 97%;
     margin-bottom: 20px;
     float: none;
     margin: 10px;
