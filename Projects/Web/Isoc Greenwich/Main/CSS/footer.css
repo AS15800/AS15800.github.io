@@ -1,0 +1,172 @@
+.footer {
+    background-color: #2C3E50;
+    width: 100%;
+    height: 300px;
+    vertical-align: bottom;
+}
+
+.socialMedia {
+    text-align: center;
+}
+
+.socialBtn {
+    position: relative;
+    width: 50px;
+    margin: 10px;
+    top: 10px;
+    vertical-align: middle;
+}
+
+.socialMedia :hover {
+    transform: scale(1.3);
+}
+
+.footerBtn {
+    text-align: center;
+    margin-top: 40px;
+    width: 100%;
+}
+
+.footerButtons{
+    text-align: center;
+    color: white;
+    width: 100%;
+}
+
+.usefullLinks{
+    display: inline-block;
+}
+
+.FBtn {
+    display: inline-block;
+    color: #12AD9F;
+    text-decoration: none;
+}
+
+.FBtn :hover {
+    color: #FFFFFF;
+}
+
+.UL{
+    margin-left: 30px;
+}
+
+.footerBtn :hover {
+    color: #FFFFFF;
+}
+
+.designedText{
+    text-align: center;
+    width: 100%;
+}
+
+.copyrightText {
+    position: relative;
+    top: 30px;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 14px;
+}
+
+.adeshText{
+    position: relative;
+    top: 30px;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.adeshText:hover{
+    color: #12ad65;
+}
+
+
+/*Browser responsive*/
+
+@media only screen and (max-width: 700px) {
+    .footer {
+        height: 350px;
+    }
+    .socialMedia {
+        margin-left: 0%;
+    }
+    .socialBtn {
+        position: relative;
+        width: 40px;
+        margin: 5px;
+        top: 5px;
+        vertical-align: middle;
+        margin-top: 50px;
+    }
+    .footerBtn {
+        text-align: center;
+        margin-top: 50px;
+        width: 100%;
+        margin-left: 0%;
+    }
+    .FBtn {
+        font-size: 15px;
+        margin-left: 10px;
+    }
+    .copyrightText {
+        position: relative;
+        top: 30px;
+        text-align: center;
+        margin-left: 0%;
+        color: #FFFFFF;
+        font-size: 15px;
+    }
+}
+
+
+/*Mobile responsive*/
+
+@media only screen and (max-device-width: 480px) {
+    .footer {
+        height: 650px;
+    }
+    .socialMedia {
+        margin-left: 0%;
+    }
+    .socialBtn {
+        position: relative;
+        width: 120px;
+        margin: 10px;
+        top: 10px;
+        vertical-align: middle;
+        margin-top: 50px;
+    }
+    .footerBtn {
+        text-align: center;
+        margin-top: 80px;
+        width: 100%;
+        margin-left: 0%;
+    }
+    .FBtn {
+        font-size: 30px;
+    }
+    .copyrightText {
+        position: relative;
+        top: 80px;
+        text-align: center;
+        margin-left: 0%;
+        color: #FFFFFF;
+        font-size: 30px;
+        padding-bottom: 20px;
+    }
+
+    .footerButtons h3{
+        font-size: 40px;
+    }
+
+    .footerBtn{
+        margin-top: 40px;
+        display: block;
+    }
+
+    .footerBtn a{
+        font-size: 40px;
+        width: 100%;
+    }
+}

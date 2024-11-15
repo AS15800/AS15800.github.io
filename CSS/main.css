@@ -293,8 +293,16 @@ p {
   align-items: center;
 }
 
+.Projectcontainer{
+  display: grid;
+  grid-template-columns: repeat(4, 5fr);
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
 .projectImage{
-  max-width: 400%;
+  max-width: 100%;
   height: auto;
   display: block;
 }
@@ -392,20 +400,20 @@ p {
   text-decoration: none;
 }
 
-.card {
+.projects {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 20px;
   text-align: center;
   background-color: #334955;
   border-radius: 20px;
   min-height: 1vh;
+  width:fit-content;
 }
 
 .card
 p, h3 {
   color: #ffffff;
   text-decoration: none;
-  width: 20vw;
   margin-top: 0;
 }
 
