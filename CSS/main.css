@@ -14,29 +14,30 @@ body {
 
 .menu ul {
 	list-style-type: none;
-	margin: 0;
+	margin-top: 10px;
 	padding: 0;
 	overflow: hidden;
-	background-color: #000000;
+	background-color: #ffffff;
 	padding-top: 15px;
 	padding-bottom: 15px;
 	z-index: 100;
 	display: inline-block;
 	position: fixed;
 	transform: translate(-50%, 0%);
-  width: 100%;
+  width: fit-content;
+  border-radius: 100px;
 }
 
 .menu li a {
-	color: white;
+	color: rgb(150, 150, 150);
 	padding: 20px;
 	text-decoration: none;
 	font-family: 'Montserrat';
 }
 
 .menu li a:hover {
-	background-color: #111;
-	color: aquamarine;
+	background-color: #d0e0de;
+  color: #000;
 }
 
 .menu li {
@@ -49,15 +50,7 @@ body {
   display: none;
 }
 
-.carousel-indicators li {
-  background-color: rgb(0, 0, 0);
-}
-
-.firstBackground{
-  height: 100vh;
-  width: 100vw;
-  opacity: 0.4;
-}
+/* End of Nav Bar CSS */
 
 .carousel-caption {
   top: 0%;
@@ -82,11 +75,10 @@ body {
 .btn {
   font-size: 18px;
   color: rgb(255, 255, 255);
-  padding: 10px;
+  padding: 15px;
   background-color: #334955;
   border: 2px solid #fff;
   border-radius: 30px;
-  width: 200px;
   margin-top: 5%;
   margin-left: 48%;
 }
@@ -117,6 +109,8 @@ p {
   overflow: hidden;
   width: 100%;
 }
+
+/* End of First Screen */
 
 .secondScreen {
   position: relative;
