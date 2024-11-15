@@ -126,6 +126,11 @@ p {
   margin-left: 0%;
 }
 
+.aboutMeTitle {
+  color: #fff;
+  margin-top: 10vh;
+}
+
 .aboutParaFrame{
   margin-left: 25%;
   width: 50vw;
@@ -136,10 +141,7 @@ p {
   font-size: 18px;
 }
 
-.aboutMeTitle {
-  color: #fff;
-  margin-top: 10vh;
-}
+/* End of Second Screen */
 
 .thirdScreen {
   position: relative;
@@ -215,6 +217,8 @@ p {
   color: #e0e0e0;
 }
 
+/* End of Third Screen */
+
 .fourthScreen {
   position: relative;
   height: 100%;
@@ -242,11 +246,6 @@ p {
   color: #ffffff;
 }
 
-.education-row span {
-  color: #334955;
-  float: right;
-}
-
 .education-row h4 {
   color: #bbc9d4;
   clear: both;
@@ -254,12 +253,14 @@ p {
   margin: 0 0 15px 0;
 }
 
-.education-row p {
+.education-row p,li {
   font-weight: 500;
   text-align: left;
   color: #e0e0e0;
   margin: 0 0 15px 0;
 }
+
+/* End of Fourth Screen */ 
 
 .fifthScreen {
   position: relative;
@@ -280,19 +281,14 @@ p {
   border-radius: 20px;
 }
 
-.container{
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  justify-content: center;
-  align-items: center;
-}
-
 .Projectcontainer{
   display: grid;
-  grid-template-columns: repeat(4, 5fr);
+  grid-template-columns: repeat(5, 90fr);
   margin-top: 20px;
+  margin-left: 20px;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 .projectImage{
@@ -319,79 +315,6 @@ p {
 .filterBtn.active {
   background-color: #666;
   color: white;
-}
-
-.button {
-  border-radius: 6px;
-  background-color: #d3a016;
-  border: none;
-  color: #FFFFFF;
-  text-align: center;
-  font-size: 28px;
-  padding: 10px;
-  width: 250px;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 5px;
-}
-
-.button span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-.button span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-
-.button:hover span {
-  padding-right: 25px;
-}
-
-.button:hover span:after {
-  opacity: 1;
-  right: 0;
-}
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.project_rows{
-  width: 100%;
-  margin: 20px;
-  display: flex;
-  justify-content: center;
-}
-
-.projectBtns{
-  margin: 10px;
-}
-
-.btnProjects {
-  background-color: rgb(255, 255, 255);
-  border-radius: 5px;
-  border: none;
-  color: rgb(0, 0, 0);
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-right: 30px;
-  padding-left: 30px;
-  text-decoration: none;
-}
-
-.btnProjects:hover {
-  background-color: rgb(213, 232, 253);
-  color: rgb(0, 0, 0);
-  text-decoration: none;
 }
 
 .projects {
