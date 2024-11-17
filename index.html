@@ -55,32 +55,6 @@
         document.getElementById("myNav").style.width = "0%";
         document.getElementById("navMenu").style.visibility = "visible";
       }
-      
-
-      jQuery(function ($) {
-        var roles = [
-          "Computer Science",
-          "Android Developer",
-          "Game Developer",
-          "Web Developer",
-        ];
-        //used to determine which is the next roles to be displayed
-        var counter = 0;
-        var $role = $("#jobs");
-        //repeat the passed function at the specified interval - it is in milliseconds
-        setInterval(function () {
-          //display the role and increment the counter to point to next role
-          $role.text(roles[counter++]);
-          //if it is the last role in the array point back to the first item
-          if (counter >= roles.length) {
-            counter = 0;
-          }
-        }, 3000);
-      });
-
-      function projectPage(){
-
-      }
 
     </script>
     <!-- End of Navigation -->
@@ -91,7 +65,7 @@
       <div class="carousel-caption">
         <h1>Adesh Sookdewo</h1>
         <a href="https://www.linkedin.com/in/adeshsing-sookdewo/" target="_blank"> <img src ="/Assets/img/LinkedInLogo.png" style="width: 62px;height: 62px;"> </a>
-        <h2 id="jobs">Computer Science</h2>        
+        <h2 id="jobs">Android & Game Developer</h2>        
         <a
           type="button"
           class="btn btn-default"
@@ -287,18 +261,21 @@
       <div id="myBtnContainer">
         <button class="filterBtn active" onclick="filterSelection('all')">Show all</button>
         <button class="filterBtn " onclick="filterSelection('android')">Android</button>
+        
+        <!--
         <button class="filterBtn " onclick="filterSelection('web')">Web</button>
         <button class="filterBtn " onclick="filterSelection('unity')">Unity</button>
         <button class="filterBtn " onclick="filterSelection('unrealengine')">Unreal Engine</button>
         <button class="filterBtn " onclick="filterSelection('desktop')">Desktop</button>
+      -->
       </div>
 
       <div class="button-container">
 
-        <a href="https://example1.com" target="_blank" class="filterDiv android custom-button">
+        <a href="/Projects/Android/Driving Theory/DrivingTheory.html" target="_blank" class="filterDiv android custom-button">
           <img src="/Projects/Android/Driving Theory/DrivingTheoryLogo.png" alt="Image 1">
           <h3>Driving Theory App</h3>
-          <span>Button 1</span>
+          <span>A Driving Theory App that includes all the question from the DVSA to help you pass your driving theory quickly.</span>
         </a>
 
       </div>
@@ -310,7 +287,7 @@
       <h1>Skills</h1>
       <ul>
         <li>
-          software - Android Studio, Unity, Unreal Engine 5 | Blender and Photoshop
+          Software - Android Studio, Unity, Unreal Engine 5 | Blender and Photoshop
         </li>
         <li>
           Languages - Kotlin, C#, Java, Python, JavaScript, C++ | HTML, CSS and SQL
@@ -327,7 +304,7 @@
     <div class="seventhScreen" id="Footer">
       <footer>
         <p>
-          Built by: Adesh Sookdewo<br />
+          Built by: Adesh Sookdewo<br><br>
           <a class = "emailText" href="mailto:adeshsookdewo@outlook.com">Email me at: adeshsookdewo@outlook.com</a>
         </p>
       </footer>
