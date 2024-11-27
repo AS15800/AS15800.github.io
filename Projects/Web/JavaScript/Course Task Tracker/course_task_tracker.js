@@ -70,4 +70,36 @@ let addTask = function(){
 /* Part 3 */
 let editTask = function(){
     let listItem = this.parentNode;
+
+    let editInput = listItem.querySelector('input[type=text]');
+    let label = listItem.querySelector("label");
+    let containsClass = listItem.classList.contains("editMode");
+
+    //If class of the parent is .editMode
+    if(containsClass){
+        label.innerText = editInput.value;
+    } else {
+        editInput.value = label.innerText;
+    }
+    listItem.classList.toggle("editMode");
 }
+
+/* Part 4 */
+let deleteTask = function(){
+    let listItem = this.parentNode;
+    let ul = listItem.parentNode;
+
+    //Remove the parent list item from the ul
+    ul.removeChild(listItem);
+}
+
+/* Part 5 */
+let taskCompleted = function(){
+    
+    //Append the task list item to the #completed-tasks
+    let listItem = this.parentNode;
+    completedTasksHolder.append(listItem);
+    bindTaskEvents(listItem, taskIncomplete);
+}
+
+/* Part 6 */
