@@ -16,4 +16,14 @@ function calculateBMI(){
 
     else if(weight === "" || isNaN(weight))
         result.innerHTML = "Provide a value Weight";
+
+    else{
+        let bmi = (weight / ((height * height) / 10000)).toFixed(1);
+
+        if(bmi < 18.6) result.innerHTML = `Under Weight : <span>${bmi}</span>`;
+
+        else if(bmi > 18.6 && bmi <24.9) result.innerHTML = `Normal : <span>${bmi}</span>`;
+
+        else result.innerHTML = `Overr Weight : <span>${bmi}</span>`;
+    }
 }
