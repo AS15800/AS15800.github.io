@@ -308,10 +308,11 @@ p {
   border: none;
   cursor: pointer;
   transition: transform 0.2s, box-shadow 0.2s;
+  padding: 10px;
 }
 
 .custom-button:hover {
-  transform: translateY(-10px);
+  background-color: #005b72;
 }
 
 .custom-button img {
