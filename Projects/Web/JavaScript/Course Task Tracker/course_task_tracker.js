@@ -3,7 +3,7 @@
 let taskInput = document.getElementById("new-task");
 
 //Add button
-let addButton = document.getElementById("button")[0];
+let addButton = document.getElementsByTagName("button")[0];
 
 //ul of #incomplete-tasks
 let incompleteTaskHolder = document.getElementById("incomplete-tasks");

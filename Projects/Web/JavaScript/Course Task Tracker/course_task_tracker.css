@@ -24,7 +24,7 @@ button{
     outline: none;
 }
 
-button{
+.addBtn{
     background: #2c7f57;
     border: 0;
     color: #fff;
@@ -40,8 +40,23 @@ button{
     border-radius: 10px;
 }
 
-button:hover{
+.addBtn:hover{
     background: #196e45;
+}
+
+button {
+    background: none;
+    border: 0;
+    color: #a9a9a9;
+    font-size: 15px;
+    width: 100px;
+    margin: 10px 0 0;
+    font-family: Lato, sans-serif;
+    cursor: pointer;
+}
+
+button:hover {
+    color: #ff4b4b;
 }
 
 /* Heading */
@@ -110,6 +125,7 @@ li>label {
     line-height: 40px;
     width: 237px;
     padding: 0 0 0 11px;
+    color: #fff;
 }
 
 li>input[type="text"]{
