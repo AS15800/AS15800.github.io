@@ -294,13 +294,40 @@ p {
   margin-right: 30px;
 }
 
+.android{
+  background-color: #0c4b19;
+}
+.android:hover{
+  background-color: #147e29;
+}
+
+.web{
+  background-color: #36210c;
+}
+.web:hover{
+  background-color: #5b350f;
+}
+
+.unity{
+  background-color: #25266a;
+}
+.unity:hover{
+  background-color: #3133a6;
+}
+
+.unrealengine{
+  background-color: #4a285b;
+}
+.unrealengine:hover{
+  background-color: #783997;
+}
+
 .custom-button {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  background-color: #004455;
   color: white;
   width: 250px;
   height: fit-content;
@@ -309,10 +336,7 @@ p {
   cursor: pointer;
   transition: transform 0.2s, box-shadow 0.2s;
   padding: 10px;
-}
-
-.custom-button:hover {
-  background-color: #005b72;
+  height: 400px;
 }
 
 .custom-button img {
