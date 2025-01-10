@@ -26,6 +26,8 @@ h1 {
 .statText{
 	color: #FFFFFF;
 	text-align: center;
+	display: block;
+	margin-bottom: 10px;
 }
 
 .firstScreen {
@@ -101,6 +103,11 @@ div.gallery {
 	width: 100%;
 	height: auto;
 	align-items: center;
+  }
+
+  div.gallery video{
+	width: 300px;
+	margin-left: -30%;
   }
   
   div.desc {
