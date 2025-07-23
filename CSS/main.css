@@ -17,7 +17,7 @@ body {
 	margin-top: 10px;
 	padding: 0;
 	overflow: hidden;
-	background-color: #ffffff;
+	background-color: #000000;
 	padding-top: 15px;
 	padding-bottom: 15px;
 	z-index: 100;
@@ -29,15 +29,15 @@ body {
 }
 
 .menu li a {
-	color: rgb(61, 61, 61);
+	color: rgb(255, 255, 255);
 	padding: 20px;
 	text-decoration: none;
 	font-family: 'Montserrat';
 }
 
 .menu li a:hover {
-	background-color: #a0a0a0;
-  color: #000;
+	background-color: #292929;
+  color: #ffffff;
 }
 
 .menu li {
@@ -96,7 +96,7 @@ h1 {
 h1,
 h2,
 p {
-  color: #fff;
+  color: #000000;
   text-align: center;
 }
 
@@ -104,7 +104,7 @@ p {
   position: relative;
   min-height: 100vh;
   max-height: 100vh;
-  background-color: #182329;
+  background-color: #4a4a4a;
   background-size: cover;
   overflow: hidden;
   width: 100%;
@@ -116,7 +116,7 @@ p {
   position: relative;
   height: 100%;
   max-height: 1080px;
-  background-color: #182329;
+  background-color: #f3f3f3;
   background-size: cover;
   overflow: hidden;
   width: 100%
@@ -127,7 +127,7 @@ p {
 }
 
 .aboutMeTitle {
-  color: #fff;
+  color: #000000;
   margin-top: 10vh;
 }
 
@@ -137,7 +137,7 @@ p {
 }
 
 .aboutMePara {
-  color: #fff;
+  color: #252525;
   font-size: 18px;
 }
 
@@ -148,7 +148,7 @@ p {
   height: 100%;
   min-height: 500px;
   max-height: 2080px;
-  background-color: #182329;
+  background-color: #e9e9e9;
   background-size: cover;
   overflow: hidden;
   width: 100%;
@@ -172,7 +172,7 @@ p {
   left: 0;
   top: 65px;
   font-weight: 300;
-  color: #ffffff;
+  color: #000000;
   font-size: 16px;
 }
 
@@ -224,7 +224,6 @@ p {
   height: 100%;
   min-height: 500px;
   max-height: 2080px;
-  background-color: #182329;
   background-size: cover;
   overflow: hidden;
   width: 100%;
@@ -266,7 +265,6 @@ p {
   position: relative;
   height: 100%;
   min-height: 500px;
-  background-color: #182329;
   background-size: cover;
   overflow: hidden;
   width: 100%;
@@ -294,49 +292,17 @@ p {
   margin-right: 30px;
 }
 
-.android{
-  background-color: #16a085;
-}
-.android:hover{
-  background-color: #1abc9c;
-}
-
-.web{
-  background-color: #d35400;
-}
-.web:hover{
-  background-color: #e67e22;
-}
-
-.unity{
-  background-color: #2c3e50;
-}
-.unity:hover{
-  background-color: #34495e;
-}
-
-.unrealengine{
-  background-color: #8e44ad;
-}
-.unrealengine:hover{
-  background-color: #9b59b6;
-}
-
 .custom-button {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   text-decoration: none;
   color: white;
   width: 250px;
-  height: fit-content;
   border-radius: 20px;
   border: none;
   cursor: pointer;
   transition: transform 0.2s, box-shadow 0.2s;
-  padding: 10px;
-  height: 400px;
+  padding: 5px;
+  height: 430px;
+  background-color: #000;
 }
 
 .custom-button img {
@@ -348,6 +314,16 @@ p {
 
 .custom-button span {
   font-size: 14px;
+}
+
+.techStackList{
+  top: 10px;
+}
+
+.techStack{
+  background-color: #19352f;
+  padding: 5px;
+  top: 10px;
 }
 
 /* --- */
@@ -389,7 +365,6 @@ p {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 20px;
   text-align: center;
-  background-color: #334955;
   border-radius: 20px;
   min-height: 1vh;
   width:fit-content;
@@ -437,7 +412,6 @@ p, h3 {
   height: 100%;
   min-height: 500px;
   max-height: 1080px;
-  background-color: #182329;
   background-size: cover;
   overflow: hidden;
   width: 100%;
